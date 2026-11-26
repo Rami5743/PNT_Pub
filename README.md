@@ -48,4 +48,4 @@ browser), so nothing has to be built.
 ## GitHub Pages
 
 Settings → Pages → Source: *Deploy from a branch*, branch `main`, folder
-`/ (root)`. The page is then at `https://rami5743.github.io/PNT_Pub/ (the path is case-sensitive, like the repository name)`.
+`/ (root)`. The page is then at `https://rami5743.github.io/PNT_Pub/` (the path is case-sensitive: it is the repository name exactly).
