@@ -17,6 +17,8 @@ manifest.json              the videos, their titles and lengths, the subtitle la
 videos/pnt-intro.mp4       the whole video
 videos/NN-slug.mp4         scene NN
 subtitles/<lang>/<id>.srt  subtitles of video <id> in language <lang>
+fonts/SubtitleSans.woff2   the subtitle font: DejaVu Sans, in which the % of p₁%(n) is an index too
+icons/                     the site icon (π and ζ, set in TeX's Computer Modern), SVG and PNG
 .nojekyll                  serve the files as they are
 ```
 
@@ -43,7 +45,8 @@ It copies the videos and the Hebrew subtitles here and rewrites
    ```
 
 The page reads the SRT files directly (it converts them to WebVTT in the
-browser), so nothing has to be built.
+browser), so nothing has to be built. Run `publish.py` again after adding a
+language, so that the subtitle font includes its letters.
 
 ## GitHub Pages
 
