@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>משפט המספרים הראשוניים</title>
+<style>
+  :root {
+    --bg: #0e0f12;
+    --panel: #17191e;
+    --line: #2a2d34;
+    --text: #e8e6e1;
+    --muted: #9a9ca3;
+    --accent: #e6c35c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Assistant", "Segoe UI", "Arial Hebrew", Arial, sans-serif;
+    line-height: 1.5;
+  }
+  header { padding: 24px 16px 8px; max-width: 1280px; margin: 0 auto; }
+  h1 { margin: 0; font-size: 1.7rem; font-weight: 600; }
+  h1 span { color: var(--accent); }
+  main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 12px 16px 40px;
+  }
+  @media (max-width: 860px) { main { grid-template-columns: minmax(0, 1fr); } }
+
+  .player { min-width: 0; }
+  video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 6px;
+    display: block;
+  }
+  video::cue {
+    font-family: "Assistant", "Segoe UI", Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.55);
+  }
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 18px;
+    margin-top: 12px;
+  }
+  .bar h2 { margin: 0; font-size: 1.15rem; font-weight: 600; flex: 1 1 auto; }
+  .bar label { color: var(--muted); font-size: 0.95rem; }
+  select {
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 5px 8px;
+    font: inherit;
+  }
+  .downloads { margin-top: 8px; font-size: 0.9rem; color: var(--muted); }
+  .downloads a { color: var(--muted); }
+  .downloads a:hover { color: var(--text); }
+
+  nav {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 6px;
+    align-self: start;
+  }
+  nav button {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: baseline;
+    text-align: right;
+    background: none;
+    border: 0;
+    border-radius: 4px;
+    color: var(--text);
+    font: inherit;
+    padding: 7px 10px;
+    cursor: pointer;
+  }
+  nav button:hover { background: #22252b; }
+  nav button[aria-current="true"] { background: #2b2717; color: var(--accent); }
+  nav .num { color: var(--muted); min-width: 1.6em; font-variant-numeric: tabular-nums; }
+  nav .title { flex: 1; }
+  nav .time { color: var(--muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; direction: ltr; }
+  nav .full { font-weight: 600; border-bottom: 1px solid var(--line); border-radius: 4px 4px 0 0; margin-bottom: 4px; }
+  nav .hint { color: var(--muted); font-size: 0.8rem; padding: 4px 10px 8px; }
+  .error { color: #e08a7a; }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="site-title">משפט המספרים הראשוניים</h1>
+</header>
+<main>
+  <section class="player">
+    <video id="video" controls preload="metadata" playsinline crossorigin="anonymous"></video>
+    <div class="bar">
+      <h2 id="now-title"></h2>
+      <label for="subs">כתוביות</label>
+      <select id="subs"><option value="">ללא</option></select>
+    </div>
+    <div class="downloads" id="downloads"></div>
+  </section>
+  <nav id="list" aria-label="סרטונים"></nav>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  var video = document.getElementById("video");
+  var subsSelect = document.getElementById("subs");
+  var list = document.getElementById("list");
+  var nowTitle = document.getElementById("now-title");
+  var downloads = document.getElementById("downloads");
+
+  var manifest = null;
+  var current = null;          // the entry being played
+  var vttCache = {};           // "<lang>/<id>" -> blob URL, or null if absent
+
+  function load(key, fallback) {
+    try { var v = localStorage.getItem(key); return v === null ? fallback : v; }
+    catch (e) { return fallback; }
+  }
+  function save(key, value) {
+    try { localStorage.setItem(key, value); } catch (e) {}
+  }
+
+  function clock(seconds) {
+    var s = Math.round(seconds);
+    return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+  }
+
+  // SRT -> WebVTT: a header, and a dot for the comma in each timestamp.
+  function srtToVtt(srt) {
+    var body = srt.replace(/^\uFEFF/, "").replace(/\r\n?/g, "\n")
+      .replace(/(\d\d:\d\d:\d\d),(\d\d\d)/g, "$1.$2");
+    return "WEBVTT\n\n" + body;
+  }
+
+  function subtitleUrl(lang, id) {
+    var key = lang + "/" + id;
+    if (key in vttCache) return Promise.resolve(vttCache[key]);
+    return fetch("subtitles/" + key + ".srt")
+      .then(function (r) { return r.ok ? r.text() : null; })
+      .then(function (text) {
+        var url = text === null ? null
+          : URL.createObjectURL(new Blob([srtToVtt(text)], { type: "text/vtt" }));
+        vttCache[key] = url;
+        return url;
+      })
+      .catch(function () { vttCache[key] = null; return null; });
+  }
+
+  function language(code) {
+    return manifest.languages.filter(function (l) { return l.code === code; })[0];
+  }
+
+  // Show the chosen language's track, hide the others.
+  function applySubtitleChoice() {
+    var chosen = subsSelect.value;
+    save("pnt-subs", chosen);
+    for (var i = 0; i < video.textTracks.length; i++) {
+      var t = video.textTracks[i];
+      t.mode = t.language === chosen ? "showing" : "disabled";
+    }
+  }
+
+  function play(entry, startAt, autoplay) {
+    current = entry;
+    save("pnt-video", entry.id);
+    nowTitle.textContent = entry.number ? entry.number + ". " + entry.title : entry.title;
+
+    Array.prototype.forEach.call(list.querySelectorAll("button[data-id]"), function (b) {
+      b.setAttribute("aria-current", b.dataset.id === entry.id ? "true" : "false");
+    });
+
+    Array.prototype.forEach.call(video.querySelectorAll("track"), function (t) { t.remove(); });
+    video.src = entry.file;
+    if (startAt) {
+      video.addEventListener("loadedmetadata", function seek() {
+        video.removeEventListener("loadedmetadata", seek);
+        video.currentTime = startAt;
+      });
+    }
+
+    var links = ['<a href="' + entry.file + '" download>הורדת הסרטון</a>'];
+    downloads.innerHTML = "";
+
+    var wanted = load("pnt-subs", subsSelect.value);
+    subsSelect.length = 1;
+    Promise.all(manifest.languages.map(function (lang) {
+      return subtitleUrl(lang.code, entry.id).then(function (url) {
+        return { lang: lang, url: url };
+      });
+    })).then(function (found) {
+      if (current !== entry) return;
+      found.forEach(function (f) {
+        if (!f.url) return;
+        var track = document.createElement("track");
+        track.kind = "subtitles";
+        track.srclang = f.lang.code;
+        track.label = f.lang.label;
+        track.src = f.url;
+        video.appendChild(track);
+        var opt = document.createElement("option");
+        opt.value = f.lang.code;
+        opt.textContent = f.lang.label;
+        subsSelect.appendChild(opt);
+        links.push('<a href="subtitles/' + f.lang.code + "/" + entry.id +
+                   '.srt" download>כתוביות (' + f.lang.label + ")</a>");
+      });
+      var available = Array.prototype.some.call(subsSelect.options,
+        function (o) { return o.value === wanted; });
+      subsSelect.value = available ? wanted : "";
+      // Tracks are registered asynchronously in some browsers.
+      setTimeout(applySubtitleChoice, 0);
+      applySubtitleChoice();
+      downloads.innerHTML = links.join(" · ");
+    });
+
+    if (autoplay) video.play().catch(function () {});
+  }
+
+  function button(entry, extraClass, onClick) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.dataset.id = entry.id;
+    if (extraClass) b.className = extraClass;
+    b.innerHTML =
+      '<span class="num">' + (entry.number ? String(entry.number) : "") + "</span>" +
+      '<span class="title"></span>' +
+      '<span class="time">' + clock(entry.duration) + "</span>";
+    b.querySelector(".title").textContent = entry.title;
+    b.addEventListener("click", onClick);
+    return b;
+  }
+
+  function build() {
+    document.title = manifest.title;
+    document.getElementById("site-title").textContent = manifest.title;
+
+    var full = manifest.full;
+    list.appendChild(button(full, "full", function () { play(full, 0, true); }));
+    var hint = document.createElement("div");
+    hint.className = "hint";
+    hint.textContent = "הסצנות, כל אחת כסרטון נפרד:";
+    list.appendChild(hint);
+    manifest.scenes.forEach(function (scene) {
+      list.appendChild(button(scene, "", function () { play(scene, 0, true); }));
+    });
+
+    subsSelect.addEventListener("change", applySubtitleChoice);
+
+    var all = [full].concat(manifest.scenes);
+    var last = load("pnt-video", full.id);
+    var first = all.filter(function (e) { return e.id === last; })[0] || full;
+    play(first, 0, false);
+  }
+
+  fetch("manifest.json")
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (m) { manifest = m; build(); })
+    .catch(function (e) {
+      nowTitle.innerHTML = '<span class="error">לא ניתן לטעון את רשימת הסרטונים (manifest.json).</span>';
+    });
+})();
+</script>
+</body>
+</html>
