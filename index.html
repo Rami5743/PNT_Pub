@@ -138,14 +138,9 @@
   var manifest = null;
   var current = null;          // the entry being played
   var vttCache = {};           // "<lang>/<id>" -> blob URL, or null if absent
-
-  function load(key, fallback) {
-    try { var v = localStorage.getItem(key); return v === null ? fallback : v; }
-    catch (e) { return fallback; }
-  }
-  function save(key, value) {
-    try { localStorage.setItem(key, value); } catch (e) {}
-  }
+  // The page opens on the whole video with Hebrew subtitles (the owner's
+  // choice). A change of subtitles then holds while the viewer switches videos.
+  var wantedSubs = "he";
 
   function clock(seconds) {
     var s = Math.round(seconds);
@@ -180,7 +175,6 @@
   // Show the chosen language's track, hide the others.
   function applySubtitleChoice() {
     var chosen = subsSelect.value;
-    save("pnt-subs", chosen);
     for (var i = 0; i < video.textTracks.length; i++) {
       var t = video.textTracks[i];
       t.mode = t.language === chosen ? "showing" : "disabled";
@@ -189,7 +183,6 @@
 
   function play(entry, startAt, autoplay) {
     current = entry;
-    save("pnt-video", entry.id);
     nowTitle.textContent = entry.number ? entry.number + ". " + entry.title : entry.title;
 
     Array.prototype.forEach.call(list.querySelectorAll("button[data-id]"), function (b) {
@@ -208,7 +201,7 @@
     var links = ['<a href="' + entry.file + '" download>הורדת הסרטון</a>'];
     downloads.innerHTML = "";
 
-    var wanted = load("pnt-subs", subsSelect.value);
+    var wanted = wantedSubs;
     subsSelect.length = 1;
     Promise.all(manifest.languages.map(function (lang) {
       return subtitleUrl(lang.code, entry.id).then(function (url) {
@@ -271,12 +264,12 @@
       list.appendChild(button(scene, "", function () { play(scene, 0, true); }));
     });
 
-    subsSelect.addEventListener("change", applySubtitleChoice);
+    subsSelect.addEventListener("change", function () {
+      wantedSubs = subsSelect.value;
+      applySubtitleChoice();
+    });
 
-    var all = [full].concat(manifest.scenes);
-    var last = load("pnt-video", full.id);
-    var first = all.filter(function (e) { return e.id === last; })[0] || full;
-    play(first, 0, false);
+    play(full, 0, false);
   }
 
   fetch("manifest.json")
