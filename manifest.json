@@ -4,7 +4,7 @@
     "id": "pnt-intro",
     "title": "הסרטון המלא",
     "file": "videos/pnt-intro.mp4",
-    "duration": 558.8
+    "duration": 476.1
   },
   "scenes": [
     {
@@ -12,7 +12,7 @@
       "number": 1,
       "title": "מספר גדול",
       "file": "videos/01-a-large-number.mp4",
-      "duration": 57.1,
+      "duration": 46.8,
       "start": 0.0
     },
     {
@@ -20,104 +20,104 @@
       "number": 2,
       "title": "סופרים ראשוניים",
       "file": "videos/02-counting.mp4",
-      "duration": 26.55,
-      "start": 57.1
+      "duration": 22.55,
+      "start": 46.8
     },
     {
       "id": "03-sliding-window",
       "number": 3,
       "title": "חלון נע",
       "file": "videos/03-sliding-window.mp4",
-      "duration": 47.7,
-      "start": 83.65
+      "duration": 41.4,
+      "start": 69.35
     },
     {
       "id": "04-rarity",
       "number": 4,
       "title": "הנדירות",
       "file": "videos/04-rarity.mp4",
-      "duration": 26.45,
-      "start": 131.35
+      "duration": 23.45,
+      "start": 110.75
     },
     {
       "id": "05-log-scale",
       "number": 5,
       "title": "סקאלה לוגריתמית",
       "file": "videos/05-log-scale.mp4",
-      "duration": 27.8,
-      "start": 157.8
+      "duration": 24.2,
+      "start": 134.2
     },
     {
       "id": "06-other-percents",
       "number": 6,
       "title": "אחוזים אחרים",
       "file": "videos/06-other-percents.mp4",
-      "duration": 15.35,
-      "start": 185.6
+      "duration": 13.85,
+      "start": 158.4
     },
     {
       "id": "07-the-limit",
       "number": 7,
       "title": "הגבול",
       "file": "videos/07-the-limit.mp4",
-      "duration": 52.8,
-      "start": 200.95
+      "duration": 44.1,
+      "start": 172.25
     },
     {
       "id": "08-history",
       "number": 8,
       "title": "היסטוריה",
       "file": "videos/08-history.mp4",
-      "duration": 49.0,
-      "start": 253.75
+      "duration": 42.5,
+      "start": 216.35
     },
     {
       "id": "09-the-plan",
       "number": 9,
       "title": "התוכנית",
       "file": "videos/09-the-plan.mp4",
-      "duration": 29.25,
-      "start": 302.75
+      "duration": 24.15,
+      "start": 258.85
     },
     {
       "id": "10-factorial",
       "number": 10,
       "title": "עצרת",
       "file": "videos/10-factorial.mp4",
-      "duration": 35.0,
-      "start": 332.0
+      "duration": 30.4,
+      "start": 283.0
     },
     {
       "id": "11-taking-logs",
       "number": 11,
       "title": "לוקחים לוגריתם",
       "file": "videos/11-taking-logs.mp4",
-      "duration": 44.55,
-      "start": 367.0
+      "duration": 37.45,
+      "start": 313.4
     },
     {
       "id": "12-mertens",
       "number": 12,
       "title": "משפט מרטנס",
       "file": "videos/12-mertens.mp4",
-      "duration": 42.7,
-      "start": 411.55
+      "duration": 37.2,
+      "start": 350.85
     },
     {
       "id": "13-harmonic",
       "number": 13,
       "title": "הטור ההרמוני",
       "file": "videos/13-harmonic.mp4",
-      "duration": 77.8,
-      "start": 454.25
+      "duration": 64.4,
+      "start": 388.05
     },
     {
       "id": "14-weak-pnt",
       "number": 14,
       "title": "אם הגבול קיים, הוא 1",
       "file": "videos/14-weak-pnt.mp4",
-      "duration": 26.75,
-      "start": 532.05
+      "duration": 23.65,
+      "start": 452.45
     }
   ],
   "languages": [
