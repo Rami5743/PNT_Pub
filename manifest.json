@@ -16,7 +16,7 @@
       "he": "videos/pnt-intro.mp4",
       "en": "videos/en/pnt-intro.mp4"
     },
-    "duration": 519.25
+    "duration": 519.433
   },
   "scenes": [
     {
@@ -30,7 +30,7 @@
       "file": "videos/01-a-large-number.mp4",
       "files": {
         "he": "videos/01-a-large-number.mp4",
-        "en": "videos/01-a-large-number.mp4"
+        "en": "videos/en/01-a-large-number.mp4"
       },
       "duration": 51.5,
       "start": 0.0
@@ -46,7 +46,7 @@
       "file": "videos/02-counting.mp4",
       "files": {
         "he": "videos/02-counting.mp4",
-        "en": "videos/02-counting.mp4"
+        "en": "videos/en/02-counting.mp4"
       },
       "duration": 23.65,
       "start": 51.5
@@ -62,7 +62,7 @@
       "file": "videos/03-sliding-window.mp4",
       "files": {
         "he": "videos/03-sliding-window.mp4",
-        "en": "videos/03-sliding-window.mp4"
+        "en": "videos/en/03-sliding-window.mp4"
       },
       "duration": 43.75,
       "start": 75.15
@@ -94,7 +94,7 @@
       "file": "videos/05-log-scale.mp4",
       "files": {
         "he": "videos/05-log-scale.mp4",
-        "en": "videos/05-log-scale.mp4"
+        "en": "videos/en/05-log-scale.mp4"
       },
       "duration": 24.95,
       "start": 143.75
@@ -110,7 +110,7 @@
       "file": "videos/06-other-percents.mp4",
       "files": {
         "he": "videos/06-other-percents.mp4",
-        "en": "videos/06-other-percents.mp4"
+        "en": "videos/en/06-other-percents.mp4"
       },
       "duration": 14.45,
       "start": 168.7
@@ -126,7 +126,7 @@
       "file": "videos/07-the-limit.mp4",
       "files": {
         "he": "videos/07-the-limit.mp4",
-        "en": "videos/07-the-limit.mp4"
+        "en": "videos/en/07-the-limit.mp4"
       },
       "duration": 60.1,
       "start": 183.15
@@ -174,9 +174,9 @@
       "file": "videos/10-factorial.mp4",
       "files": {
         "he": "videos/10-factorial.mp4",
-        "en": "videos/10-factorial.mp4"
+        "en": "videos/en/10-factorial.mp4"
       },
-      "duration": 32.9,
+      "duration": 33.083,
       "start": 312.75
     },
     {
@@ -190,10 +190,10 @@
       "file": "videos/11-taking-logs.mp4",
       "files": {
         "he": "videos/11-taking-logs.mp4",
-        "en": "videos/11-taking-logs.mp4"
+        "en": "videos/en/11-taking-logs.mp4"
       },
       "duration": 40.75,
-      "start": 345.65
+      "start": 345.833
     },
     {
       "id": "12-mertens",
@@ -209,7 +209,7 @@
         "en": "videos/en/12-mertens.mp4"
       },
       "duration": 39.7,
-      "start": 386.4
+      "start": 386.583
     },
     {
       "id": "13-harmonic",
@@ -225,7 +225,7 @@
         "en": "videos/en/13-harmonic.mp4"
       },
       "duration": 68.25,
-      "start": 426.1
+      "start": 426.283
     },
     {
       "id": "14-weak-pnt",
@@ -241,7 +241,7 @@
         "en": "videos/en/14-weak-pnt.mp4"
       },
       "duration": 24.9,
-      "start": 494.35
+      "start": 494.533
     }
   ],
   "languages": [
