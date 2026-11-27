@@ -3,25 +3,25 @@
 Let's switch to a logarithmic scale.
 
 2
-00:00:03,850 --> 00:00:06,050
+00:00:04,850 --> 00:00:07,050
 We see a clear pattern here:
 
 3
-00:00:06,500 --> 00:00:10,900
+00:00:07,500 --> 00:00:11,900
 to a very good approximation,
 it is a linear function of the logarithm.
 
 4
-00:00:11,350 --> 00:00:13,150
+00:00:12,350 --> 00:00:14,150
 Let's check which one.
 
 5
-00:00:13,900 --> 00:00:20,700
+00:00:15,600 --> 00:00:22,400
 Again, a computer shows that the natural
 logarithm approximates r₁%(n) well,
 
 6
-00:00:20,950 --> 00:00:24,150
+00:00:22,650 --> 00:00:25,850
 at least in the range
 where we can compute.
 

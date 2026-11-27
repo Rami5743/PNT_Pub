@@ -39,15 +39,15 @@ You surely remember the
 geometric series formula.
 
 10
-00:00:30,050 --> 00:00:33,650
+00:00:30,650 --> 00:00:34,250
 We got n times the series of ln p/(p−1).
 
 11
-00:00:34,100 --> 00:00:37,500
+00:00:34,700 --> 00:00:38,100
 Nothing will happen if
 we replace p−1 with p.
 
 12
-00:00:37,950 --> 00:00:39,950
+00:00:38,550 --> 00:00:40,550
 We're approximating anyway.
 

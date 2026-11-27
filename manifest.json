@@ -16,7 +16,7 @@
       "he": "videos/pnt-intro.mp4",
       "en": "videos/en/pnt-intro.mp4"
     },
-    "duration": 518.833
+    "duration": 545.85
   },
   "scenes": [
     {
@@ -242,6 +242,22 @@
       },
       "duration": 24.9,
       "start": 493.933
+    },
+    {
+      "id": "15-what-next",
+      "number": 15,
+      "title": "ומה הלאה?",
+      "titles": {
+        "he": "ומה הלאה?",
+        "en": "What next?"
+      },
+      "file": "videos/15-what-next.mp4",
+      "files": {
+        "he": "videos/15-what-next.mp4",
+        "en": "videos/en/15-what-next.mp4"
+      },
+      "duration": 27.017,
+      "start": 518.833
     }
   ],
   "languages": [

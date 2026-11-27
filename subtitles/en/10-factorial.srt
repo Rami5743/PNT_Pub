@@ -27,18 +27,18 @@ once more for every number divisible by 4,
 and so on.
 
 8
-00:00:21,350 --> 00:00:23,950
+00:00:21,750 --> 00:00:24,350
 What about 3? It's similar,
 
 9
-00:00:24,200 --> 00:00:26,800
+00:00:25,200 --> 00:00:27,800
 and so on for all the primes up to n.
 
 10
-00:00:27,250 --> 00:00:29,450
+00:00:28,250 --> 00:00:30,450
 Writing it this way is cumbersome,
 
 11
-00:00:29,700 --> 00:00:32,300
+00:00:30,700 --> 00:00:33,300
 so we'll use product and sum notation.
 

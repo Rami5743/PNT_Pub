@@ -8,38 +8,38 @@ Here too,
 it's not hard to do with a computer.
 
 3
-00:00:08,300 --> 00:00:10,700
+00:00:09,500 --> 00:00:11,900
 We run over all the numbers in this range,
 
 4
-00:00:10,950 --> 00:00:16,350
+00:00:12,150 --> 00:00:17,550
 and for each one we compute the share
 of primes within one percent of it.
 
 5
-00:00:18,300 --> 00:00:23,500
+00:00:28,000 --> 00:00:33,200
 We get a graph of the chance that a
 number within one percent of n is prime,
 
 6
-00:00:23,750 --> 00:00:25,550
+00:00:33,450 --> 00:00:35,250
 as a function of n.
 
 7
-00:00:26,000 --> 00:00:29,000
+00:00:35,700 --> 00:00:38,700
 Let's call this function p₁%(n).
 
 8
-00:00:29,450 --> 00:00:32,650
+00:00:39,150 --> 00:00:42,350
 We don't expect an exact formula for it,
 
 9
-00:00:32,900 --> 00:00:39,100
+00:00:42,600 --> 00:00:48,800
 just as we don't expect an
 informative formula for the primes.
 
 10
-00:00:39,550 --> 00:00:42,950
+00:00:49,250 --> 00:00:52,650
 But we can try to
 understand how it behaves.
 
