@@ -16,7 +16,7 @@
       "he": "videos/pnt-intro.mp4",
       "en": "videos/en/pnt-intro.mp4"
     },
-    "duration": 519.433
+    "duration": 518.833
   },
   "scenes": [
     {
@@ -160,7 +160,7 @@
         "he": "videos/09-the-plan.mp4",
         "en": "videos/en/09-the-plan.mp4"
       },
-      "duration": 25.65,
+      "duration": 25.05,
       "start": 287.1
     },
     {
@@ -177,7 +177,7 @@
         "en": "videos/en/10-factorial.mp4"
       },
       "duration": 33.083,
-      "start": 312.75
+      "start": 312.15
     },
     {
       "id": "11-taking-logs",
@@ -193,7 +193,7 @@
         "en": "videos/en/11-taking-logs.mp4"
       },
       "duration": 40.75,
-      "start": 345.833
+      "start": 345.233
     },
     {
       "id": "12-mertens",
@@ -209,7 +209,7 @@
         "en": "videos/en/12-mertens.mp4"
       },
       "duration": 39.7,
-      "start": 386.583
+      "start": 385.983
     },
     {
       "id": "13-harmonic",
@@ -225,7 +225,7 @@
         "en": "videos/en/13-harmonic.mp4"
       },
       "duration": 68.25,
-      "start": 426.283
+      "start": 425.683
     },
     {
       "id": "14-weak-pnt",
@@ -241,7 +241,7 @@
         "en": "videos/en/14-weak-pnt.mp4"
       },
       "duration": 24.9,
-      "start": 494.533
+      "start": 493.933
     }
   ],
   "languages": [

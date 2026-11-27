@@ -327,7 +327,7 @@ and led to much fascinating mathematics.
 
 73
 00:04:47,900 --> 00:04:50,700
-We won't prove the conjecture now.
+We won't prove the theorem now.
 
 74
 00:04:51,150 --> 00:04:55,150
@@ -347,263 +347,263 @@ although it isn't complicated.
 Instead, we'll prove a theorem of Mertens
 
 78
-00:05:03,950 --> 00:05:05,950
-which doesn't imply the conjecture,
+00:05:03,950 --> 00:05:05,750
+which doesn't imply it,
 
 79
-00:05:06,200 --> 00:05:10,000
+00:05:06,000 --> 00:05:09,400
 but certainly makes a convincing
 case that it should be true.
 
 80
-00:05:13,550 --> 00:05:16,550
+00:05:12,950 --> 00:05:15,950
 Let's look at the number n!
 
 81
-00:05:17,000 --> 00:05:19,200
+00:05:16,400 --> 00:05:18,600
 and try to factor it.
 
 82
-00:05:19,650 --> 00:05:22,450
+00:05:19,050 --> 00:05:21,850
 How many times does 2 appear in it?
 
 83
-00:05:22,900 --> 00:05:24,700
+00:05:22,300 --> 00:05:24,100
 That's fairly easy:
 
 84
-00:05:25,150 --> 00:05:27,750
+00:05:24,550 --> 00:05:27,150
 once for every even number up to n,
 
 85
-00:05:28,000 --> 00:05:31,400
+00:05:27,400 --> 00:05:30,800
 once more for every number divisible by 4,
 
 86
-00:05:31,850 --> 00:05:33,650
+00:05:31,250 --> 00:05:33,050
 and so on.
 
 87
-00:05:34,100 --> 00:05:36,700
+00:05:33,500 --> 00:05:36,100
 What about 3? It's similar,
 
 88
-00:05:36,950 --> 00:05:39,550
+00:05:36,350 --> 00:05:38,950
 and so on for all the primes up to n.
 
 89
-00:05:40,000 --> 00:05:42,200
+00:05:39,400 --> 00:05:41,600
 Writing it this way is cumbersome,
 
 90
-00:05:42,450 --> 00:05:45,050
+00:05:41,850 --> 00:05:44,450
 so we'll use product and sum notation.
 
 91
-00:05:46,633 --> 00:05:50,033
+00:05:46,033 --> 00:05:49,433
 These are quite large numbers,
 so let's take logs.
 
 92
-00:05:50,483 --> 00:05:52,883
+00:05:49,883 --> 00:05:52,283
 The log of a product is a sum of logs.
 
 93
-00:05:53,333 --> 00:05:56,133
+00:05:52,733 --> 00:05:55,533
 We also know how to
 take the log of a power.
 
 94
-00:05:56,583 --> 00:06:00,783
+00:05:55,983 --> 00:06:00,183
 These integer parts are rather annoying,
 so let's drop them.
 
 95
-00:06:01,033 --> 00:06:02,833
+00:06:00,433 --> 00:06:02,233
 That will give us an error term,
 
 96
-00:06:03,083 --> 00:06:05,483
+00:06:02,483 --> 00:06:04,883
 so the equality is no longer exact.
 
 97
-00:06:05,933 --> 00:06:09,133
+00:06:05,333 --> 00:06:08,533
 Now we can factor out n.
 
 98
-00:06:09,583 --> 00:06:11,783
+00:06:08,983 --> 00:06:11,183
 We are left with geometric series.
 
 99
-00:06:12,233 --> 00:06:15,433
+00:06:11,633 --> 00:06:14,833
 You surely remember the
 geometric series formula.
 
 100
-00:06:15,883 --> 00:06:19,483
+00:06:15,283 --> 00:06:18,883
 We got n times the series of ln p/(p−1).
 
 101
-00:06:19,933 --> 00:06:23,333
+00:06:19,333 --> 00:06:22,733
 Nothing will happen if
 we replace p−1 with p.
 
 102
-00:06:23,783 --> 00:06:25,783
+00:06:23,183 --> 00:06:25,183
 We're approximating anyway.
 
 103
-00:06:27,383 --> 00:06:29,183
+00:06:26,783 --> 00:06:28,583
 What about the other side?
 
 104
-00:06:29,633 --> 00:06:33,233
+00:06:29,033 --> 00:06:32,633
 A factorial is a product,
 so again its log is a sum.
 
 105
-00:06:33,683 --> 00:06:36,283
+00:06:33,083 --> 00:06:35,683
 This sum is not so easy to compute,
 
 106
-00:06:36,533 --> 00:06:38,533
+00:06:35,933 --> 00:06:37,933
 but we can approximate it well.
 
 107
-00:06:38,983 --> 00:06:43,383
+00:06:38,383 --> 00:06:42,783
 The point is that for 99%
 of the numbers up to n
 
 108
-00:06:43,633 --> 00:06:45,433
+00:06:43,033 --> 00:06:44,833
 the log is roughly log n.
 
 109
-00:06:46,683 --> 00:06:50,483
+00:06:46,083 --> 00:06:49,883
 So, quite accurately,
 we can replace it with n ln(n).
 
 110
-00:06:50,933 --> 00:06:52,933
+00:06:50,333 --> 00:06:52,333
 Now we can cancel n.
 
 111
-00:06:53,383 --> 00:06:58,983
+00:06:52,783 --> 00:06:58,383
 We got an inexact formula for the
 sum of ln p/p over the primes.
 
 112
-00:06:59,433 --> 00:07:03,233
+00:06:58,833 --> 00:07:02,633
 And if we work hard enough,
 we can bound its error.
 
 113
-00:07:03,683 --> 00:07:05,483
+00:07:03,083 --> 00:07:04,883
 This is Mertens' theorem.
 
 114
-00:07:07,083 --> 00:07:10,883
+00:07:06,483 --> 00:07:10,283
 But how is this related to
 the Prime Number Theorem?
 
 115
-00:07:11,333 --> 00:07:13,533
+00:07:10,733 --> 00:07:12,933
 Let's go back to the inexact form.
 
 116
-00:07:13,983 --> 00:07:15,783
+00:07:13,383 --> 00:07:15,183
 There's an ln(n) here.
 
 117
-00:07:16,233 --> 00:07:19,233
+00:07:15,633 --> 00:07:18,633
 You surely know another series like this.
 
 118
-00:07:19,683 --> 00:07:21,483
+00:07:19,083 --> 00:07:20,883
 It's the harmonic series.
 
 119
-00:07:21,933 --> 00:07:23,733
+00:07:21,333 --> 00:07:23,133
 So what did we get?
 
 120
-00:07:24,183 --> 00:07:26,583
+00:07:23,583 --> 00:07:25,983
 So summing over all natural numbers
 
 121
-00:07:26,833 --> 00:07:29,633
+00:07:26,233 --> 00:07:29,033
 is like summing over the primes only,
 
 122
-00:07:29,883 --> 00:07:33,083
+00:07:29,283 --> 00:07:32,483
 but giving each prime p the weight ln(p).
 
 123
-00:07:33,533 --> 00:07:39,933
+00:07:32,933 --> 00:07:39,333
 As if the primes around p were ln(p)
 times sparser than the integers,
 
 124
-00:07:40,183 --> 00:07:45,183
+00:07:39,583 --> 00:07:44,583
 and so they have to be counted with more
 weight to balance their contribution.
 
 125
-00:07:45,633 --> 00:07:49,633
+00:07:45,033 --> 00:07:49,033
 But this is exactly what the
 Prime Number Theorem said.
 
 126
-00:07:50,083 --> 00:07:54,483
+00:07:49,483 --> 00:07:53,883
 Well, this doesn't really
 prove the Prime Number Theorem,
 
 127
-00:07:54,733 --> 00:07:57,133
+00:07:54,133 --> 00:07:56,533
 since it only tells us about averages.
 
 128
-00:07:57,583 --> 00:08:01,983
+00:07:56,983 --> 00:08:01,383
 There could be regions with
 significantly fewer primes,
 
 129
-00:08:02,233 --> 00:08:04,433
+00:08:01,633 --> 00:08:03,833
 and regions with significantly more.
 
 130
-00:08:04,883 --> 00:08:06,883
+00:08:04,283 --> 00:08:06,283
 But it gives us a sense of it.
 
 131
-00:08:07,333 --> 00:08:13,733
+00:08:06,733 --> 00:08:13,133
 In fact, it yields the following weak
 version of the Prime Number Theorem:
 
 132
-00:08:15,333 --> 00:08:18,933
+00:08:14,733 --> 00:08:18,333
 If the limit in the Prime
 Number Theorem exists,
 
 133
-00:08:19,183 --> 00:08:20,983
+00:08:18,583 --> 00:08:20,383
 then it equals 1.
 
 134
-00:08:21,433 --> 00:08:23,233
+00:08:20,833 --> 00:08:22,633
 Why is this true?
 
 135
-00:08:23,683 --> 00:08:28,083
+00:08:23,083 --> 00:08:27,483
 Because if the limit is not 1,
 say it equals a number a,
 
 136
-00:08:28,333 --> 00:08:33,933
+00:08:27,733 --> 00:08:33,333
 it easily follows that the harmonic
 series is about a times Mertens' series,
 
 137
-00:08:34,183 --> 00:08:36,183
+00:08:33,583 --> 00:08:35,583
 contradicting Mertens' theorem.
 

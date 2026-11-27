@@ -1,6 +1,6 @@
 1
 00:00:00,800 --> 00:00:03,600
-We won't prove the conjecture now.
+We won't prove the theorem now.
 
 2
 00:00:04,050 --> 00:00:08,050
@@ -20,11 +20,11 @@ although it isn't complicated.
 Instead, we'll prove a theorem of Mertens
 
 6
-00:00:16,850 --> 00:00:18,850
-which doesn't imply the conjecture,
+00:00:16,850 --> 00:00:18,650
+which doesn't imply it,
 
 7
-00:00:19,100 --> 00:00:22,900
+00:00:18,900 --> 00:00:22,300
 but certainly makes a convincing
 case that it should be true.
 
