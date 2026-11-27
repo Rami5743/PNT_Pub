@@ -1,50 +1,50 @@
 1
-00:00:00,800 --> 00:00:04,200
-Gauss conjectured this, in
-a slightly different form,
+00:00:00,800 --> 00:00:05,200
+Gauss and Legendre conjectured
+this, in a slightly different form,
 
 2
-00:00:06,250 --> 00:00:09,250
+00:00:07,250 --> 00:00:10,250
 and Hadamard and de la
 Vallée Poussin proved it.
 
 3
-00:00:09,400 --> 00:00:12,400
+00:00:10,400 --> 00:00:13,400
 It is called the Prime Number Theorem,
 
 4
-00:00:12,550 --> 00:00:14,950
+00:00:13,550 --> 00:00:15,950
 and it is the subject of this video.
 
 5
-00:00:15,100 --> 00:00:19,500
+00:00:16,100 --> 00:00:20,500
 Before the full proof, Chebyshev
 proved a weaker version,
 
 6
-00:00:19,650 --> 00:00:22,250
+00:00:20,650 --> 00:00:23,250
 bounding the ratio from above and below
 
 7
-00:00:22,400 --> 00:00:24,400
+00:00:23,400 --> 00:00:25,400
 but the limit is not found,
 
 8
-00:00:24,550 --> 00:00:27,550
+00:00:25,550 --> 00:00:28,550
 and it fails for percentages
 that are too small.
 
 9
-00:00:27,700 --> 00:00:32,300
+00:00:28,700 --> 00:00:33,300
 Later, Riemann developed a revolutionary
 strategy for such problems.
 
 10
-00:00:34,550 --> 00:00:39,150
+00:00:35,550 --> 00:00:40,150
 It was this strategy that eventually
 led to the solution of the problem
 
 11
-00:00:39,300 --> 00:00:41,700
+00:00:40,300 --> 00:00:42,700
 and to much fascinating mathematics.
 
