@@ -25,25 +25,25 @@ of the numbers up to n
 the log is roughly log n.
 
 7
-00:00:20,900 --> 00:00:24,700
+00:00:20,100 --> 00:00:23,900
 So, quite accurately,
 we can replace it with n ln(n).
 
 8
-00:00:25,150 --> 00:00:27,150
+00:00:24,350 --> 00:00:26,350
 Now we can cancel n.
 
 9
-00:00:28,000 --> 00:00:33,600
+00:00:26,800 --> 00:00:32,400
 We got an inexact formula for the
 sum of ln p/p over the primes.
 
 10
-00:00:34,050 --> 00:00:37,850
+00:00:32,850 --> 00:00:36,650
 And if we work hard enough,
 we can bound its error.
 
 11
-00:00:38,300 --> 00:00:40,100
+00:00:37,100 --> 00:00:38,900
 This is Mertens' theorem.
 

@@ -54,12 +54,12 @@ We draw a number at most one percent
 of ten thousand away from it,
 
 14
-00:00:41,650 --> 00:00:47,050
+00:00:41,250 --> 00:00:46,650
 and we do it so that all these numbers
 are equally likely to be chosen.
 
 15
-00:00:47,500 --> 00:00:51,100
+00:00:47,100 --> 00:00:50,700
 We ask:
 what is the probability that it is prime?
 

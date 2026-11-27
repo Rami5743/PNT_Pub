@@ -17,11 +17,11 @@ So instead we'll talk about 1/p₁%(n).
 Let's call this function r₁%(n),
 
 5
-00:00:16,400 --> 00:00:20,200
+00:00:15,600 --> 00:00:19,400
 the "rarity" of the primes around n.
 
 6
-00:00:20,650 --> 00:00:24,850
+00:00:19,850 --> 00:00:24,050
 We see that this function increases,
 but rather slowly.
 

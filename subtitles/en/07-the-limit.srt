@@ -37,35 +37,35 @@ One way to do this is to
 divide one by the other,
 
 9
-00:00:34,200 --> 00:00:38,800
+00:00:32,800 --> 00:00:37,400
 and we want to say that this
 ratio is very close to 1.
 
 10
-00:00:39,250 --> 00:00:44,250
+00:00:37,850 --> 00:00:42,850
 Of course, when n is small,
 our statistics are not very good yet,
 
 11
-00:00:44,500 --> 00:00:46,300
+00:00:43,100 --> 00:00:44,900
 and there can be a deviation.
 
 12
-00:00:46,750 --> 00:00:50,150
+00:00:45,350 --> 00:00:48,750
 But as n grows,
 the deviation tends to vanish.
 
 13
-00:00:50,600 --> 00:00:53,200
+00:00:49,200 --> 00:00:51,800
 That's what limits were invented for.
 
 14
-00:00:53,850 --> 00:00:57,250
+00:00:52,250 --> 00:00:55,650
 So our claim is really
 that the limit is 1.
 
 15
-00:00:57,700 --> 00:01:00,900
+00:00:56,100 --> 00:00:59,300
 And as we said,
 any other percentage works too.
 

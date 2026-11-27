@@ -16,7 +16,7 @@
       "he": "videos/pnt-intro.mp4",
       "en": "videos/en/pnt-intro.mp4"
     },
-    "duration": 545.85
+    "duration": 545.05
   },
   "scenes": [
     {
@@ -256,7 +256,7 @@
         "he": "videos/15-what-next.mp4",
         "en": "videos/en/15-what-next.mp4"
       },
-      "duration": 27.017,
+      "duration": 26.217,
       "start": 518.833
     }
   ],

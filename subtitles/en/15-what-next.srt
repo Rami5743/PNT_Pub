@@ -16,15 +16,15 @@ and its connection to Riemann's zeta
 function and the Riemann Hypothesis?
 
 5
-00:00:13,300 --> 00:00:18,900
-Maybe a fun "physical" heuristic
-for why the theorem should be true?
+00:00:13,300 --> 00:00:18,100
+Maybe a fun heuristic for why
+the theorem should be true?
 
 6
-00:00:19,350 --> 00:00:21,550
+00:00:18,550 --> 00:00:20,750
 Or maybe something else entirely?
 
 7
-00:00:22,000 --> 00:00:23,800
+00:00:21,200 --> 00:00:23,000
 Tell me in the comments.
 
