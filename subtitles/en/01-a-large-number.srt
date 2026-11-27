@@ -3,70 +3,63 @@
 Take a large number.
 
 2
-00:00:02,750 --> 00:00:04,550
+00:00:03,050 --> 00:00:04,850
 For example, ten thousand.
 
 3
-00:00:04,700 --> 00:00:06,900
+00:00:05,300 --> 00:00:07,500
 What is the chance that it is prime?
 
 4
-00:00:07,050 --> 00:00:09,050
+00:00:07,950 --> 00:00:10,150
 Well, you probably answered 0.
 
 5
-00:00:09,200 --> 00:00:12,800
+00:00:10,600 --> 00:00:14,200
 I asked a silly question,
 so I got a silly answer.
 
 6
-00:00:12,950 --> 00:00:14,750
+00:00:14,650 --> 00:00:16,450
 Ten thousand is not prime.
 
 7
-00:00:14,900 --> 00:00:16,700
+00:00:16,900 --> 00:00:18,700
 So let me try again.
 
 8
-00:00:16,850 --> 00:00:20,050
+00:00:19,150 --> 00:00:22,350
 Take a random number around ten thousand:
 
 9
-00:00:20,200 --> 00:00:22,400
+00:00:22,600 --> 00:00:24,800
 what is the chance that it is prime?
 
 10
-00:00:22,550 --> 00:00:25,150
+00:00:25,250 --> 00:00:28,050
 Well, that's not well-posed either.
 
 11
-00:00:25,300 --> 00:00:28,500
+00:00:28,500 --> 00:00:32,100
 What does "around" mean?
 And what does "random" mean?
 
 12
-00:00:28,650 --> 00:00:30,850
+00:00:32,550 --> 00:00:34,750
 So let's define it more precisely.
 
 13
-00:00:31,000 --> 00:00:33,800
-We draw a number that
-differs from ten thousand
+00:00:35,200 --> 00:00:41,000
+We draw a number at most one percent
+of ten thousand away from it,
 
 14
-00:00:33,950 --> 00:00:36,950
-by at most one percent of ten thousand,
-
-15
-00:00:37,100 --> 00:00:39,900
+00:00:41,250 --> 00:00:46,650
 and we do it so that all these numbers
-
-16
-00:00:40,050 --> 00:00:42,650
 are equally likely to be chosen.
 
-17
-00:00:42,800 --> 00:00:46,000
-We ask: what is the
-probability that it is prime?
+15
+00:00:47,100 --> 00:00:50,700
+We ask:
+what is the probability that it is prime?
 

@@ -4,15 +4,15 @@ The choice of one percent
 was rather arbitrary.
 
 2
-00:00:04,150 --> 00:00:07,750
+00:00:04,450 --> 00:00:08,050
 We can choose any other percentage
 and get a similar result.
 
 3
-00:00:07,900 --> 00:00:10,400
+00:00:08,500 --> 00:00:11,000
 A 5% window
 
 4
-00:00:10,550 --> 00:00:13,050
+00:00:11,150 --> 00:00:13,650
 A 20% window
 

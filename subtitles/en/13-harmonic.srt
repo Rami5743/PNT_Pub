@@ -4,88 +4,76 @@ But how is this related to
 the Prime Number Theorem?
 
 2
-00:00:04,750 --> 00:00:06,950
+00:00:05,050 --> 00:00:07,250
 Let's go back to the inexact form.
 
 3
-00:00:07,100 --> 00:00:08,900
+00:00:07,700 --> 00:00:09,500
 There's an ln(n) here.
 
 4
-00:00:09,050 --> 00:00:12,050
+00:00:09,950 --> 00:00:12,950
 You surely know another series like this.
 
 5
-00:00:12,200 --> 00:00:14,000
+00:00:13,400 --> 00:00:15,200
 It's the harmonic series.
 
 6
-00:00:14,150 --> 00:00:15,950
+00:00:15,650 --> 00:00:17,450
 So what did we get?
 
 7
-00:00:16,100 --> 00:00:18,500
+00:00:17,900 --> 00:00:20,300
 So summing over all natural numbers
 
 8
-00:00:18,650 --> 00:00:21,450
+00:00:20,550 --> 00:00:23,350
 is like summing over the primes only,
 
 9
-00:00:21,600 --> 00:00:24,800
+00:00:23,600 --> 00:00:26,800
 but giving each prime p the weight ln(p).
 
 10
-00:00:24,950 --> 00:00:28,150
-It's just as if the primes around p
+00:00:27,250 --> 00:00:33,650
+As if the primes around p were ln(p)
+times sparser than the integers,
 
 11
-00:00:28,300 --> 00:00:31,500
-were spread ln(p) times more
-sparsely than the integers,
+00:00:33,900 --> 00:00:38,900
+and so they have to be counted with more
+weight to balance their contribution.
 
 12
-00:00:31,650 --> 00:00:34,450
-and so they have to be
-counted with more weight
-
-13
-00:00:34,600 --> 00:00:36,800
-to balance their contribution.
-
-14
-00:00:36,950 --> 00:00:40,950
+00:00:39,350 --> 00:00:43,350
 But this is exactly what the
 Prime Number Theorem said.
 
-15
-00:00:41,100 --> 00:00:45,300
+13
+00:00:43,800 --> 00:00:48,200
 Well, this doesn't really
 prove the Prime Number Theorem,
 
-16
-00:00:45,450 --> 00:00:47,850
+14
+00:00:48,450 --> 00:00:50,850
 since it only tells us about averages.
 
-17
-00:00:48,000 --> 00:00:52,400
+15
+00:00:51,300 --> 00:00:55,700
 There could be regions with
-significantly fewer primes
+significantly fewer primes,
 
-18
-00:00:52,550 --> 00:00:54,750
+16
+00:00:55,950 --> 00:00:58,150
 and regions with significantly more.
 
-19
-00:00:54,900 --> 00:00:56,900
+17
+00:00:58,600 --> 00:01:00,600
 But it gives us a sense of it.
 
-20
-00:00:57,050 --> 00:01:01,050
-In fact, one can deduce from
-it the following weak version
-
-21
-00:01:01,200 --> 00:01:03,600
-of the Prime Number Theorem:
+18
+00:01:01,050 --> 00:01:07,450
+In fact, it yields the following weak
+version of the Prime Number Theorem:
 

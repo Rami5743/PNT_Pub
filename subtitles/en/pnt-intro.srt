@@ -3,644 +3,607 @@
 Take a large number.
 
 2
-00:00:02,750 --> 00:00:04,550
+00:00:03,050 --> 00:00:04,850
 For example, ten thousand.
 
 3
-00:00:04,700 --> 00:00:06,900
+00:00:05,300 --> 00:00:07,500
 What is the chance that it is prime?
 
 4
-00:00:07,050 --> 00:00:09,050
+00:00:07,950 --> 00:00:10,150
 Well, you probably answered 0.
 
 5
-00:00:09,200 --> 00:00:12,800
+00:00:10,600 --> 00:00:14,200
 I asked a silly question,
 so I got a silly answer.
 
 6
-00:00:12,950 --> 00:00:14,750
+00:00:14,650 --> 00:00:16,450
 Ten thousand is not prime.
 
 7
-00:00:14,900 --> 00:00:16,700
+00:00:16,900 --> 00:00:18,700
 So let me try again.
 
 8
-00:00:16,850 --> 00:00:20,050
+00:00:19,150 --> 00:00:22,350
 Take a random number around ten thousand:
 
 9
-00:00:20,200 --> 00:00:22,400
+00:00:22,600 --> 00:00:24,800
 what is the chance that it is prime?
 
 10
-00:00:22,550 --> 00:00:25,150
+00:00:25,250 --> 00:00:28,050
 Well, that's not well-posed either.
 
 11
-00:00:25,300 --> 00:00:28,500
+00:00:28,500 --> 00:00:32,100
 What does "around" mean?
 And what does "random" mean?
 
 12
-00:00:28,650 --> 00:00:30,850
+00:00:32,550 --> 00:00:34,750
 So let's define it more precisely.
 
 13
-00:00:31,000 --> 00:00:33,800
-We draw a number that
-differs from ten thousand
+00:00:35,200 --> 00:00:41,000
+We draw a number at most one percent
+of ten thousand away from it,
 
 14
-00:00:33,950 --> 00:00:36,950
-by at most one percent of ten thousand,
-
-15
-00:00:37,100 --> 00:00:39,900
+00:00:41,250 --> 00:00:46,650
 and we do it so that all these numbers
-
-16
-00:00:40,050 --> 00:00:42,650
 are equally likely to be chosen.
 
+15
+00:00:47,100 --> 00:00:50,700
+We ask:
+what is the probability that it is prime?
+
+16
+00:00:52,300 --> 00:00:55,500
+We have a computer,
+so this is not a hard question.
+
 17
-00:00:42,800 --> 00:00:46,000
-We ask: what is the
-probability that it is prime?
-
-18
-00:00:47,600 --> 00:00:50,600
-We have a computer, so this
-is not a hard question.
-
-19
-00:00:50,750 --> 00:00:55,350
+00:00:55,950 --> 00:01:00,550
 We just need to count how many
 primes there are in this range
 
-20
-00:00:55,500 --> 00:00:58,100
+18
+00:01:00,700 --> 00:01:03,300
 and divide by the size of the range.
 
-21
-00:00:58,850 --> 00:01:00,650
+19
+00:01:04,050 --> 00:01:05,850
 Well, we got an answer.
 
-22
-00:01:00,800 --> 00:01:04,400
+20
+00:01:06,300 --> 00:01:09,900
 This wasn't a very
 informative question either...
 
-23
-00:01:04,550 --> 00:01:08,550
+21
+00:01:10,350 --> 00:01:14,350
 We asked about a specific number
 and got a specific answer.
 
-24
-00:01:10,150 --> 00:01:13,550
+22
+00:01:15,950 --> 00:01:19,350
 Let's ask this question for many numbers.
 
-25
-00:01:13,700 --> 00:01:16,700
-Here too, it's not hard
-to do with a computer.
+23
+00:01:19,800 --> 00:01:23,000
+Here too,
+it's not hard to do with a computer.
 
-26
-00:01:16,850 --> 00:01:19,250
+24
+00:01:23,450 --> 00:01:25,850
 We run over all the numbers in this range,
 
-27
-00:01:19,400 --> 00:01:24,800
+25
+00:01:26,100 --> 00:01:31,500
 and for each one we compute the share
 of primes within one percent of it.
 
+26
+00:01:33,450 --> 00:01:38,650
+We get a graph of the chance that a
+number within one percent of n is prime,
+
+27
+00:01:38,900 --> 00:01:40,700
+as a function of n.
+
 28
-00:01:26,850 --> 00:01:30,850
-We get a graph of the chance that
-a number within one percent of n
-
-29
-00:01:31,000 --> 00:01:33,400
-is prime, as a function of n.
-
-30
-00:01:33,550 --> 00:01:36,550
+00:01:41,150 --> 00:01:44,150
 Let's call this function p₁%(n).
 
-31
-00:01:36,700 --> 00:01:39,900
+29
+00:01:44,600 --> 00:01:47,800
 We don't expect an exact formula for it,
 
-32
-00:01:40,050 --> 00:01:42,450
-just as we don't expect
+30
+00:01:48,050 --> 00:01:54,250
+just as we don't expect an
+informative formula for the primes.
 
-33
-00:01:42,600 --> 00:01:46,400
-an informative formula for the primes.
-
-34
-00:01:46,550 --> 00:01:49,950
+31
+00:01:54,700 --> 00:01:58,100
 But we can try to
 understand how it behaves.
 
-35
-00:01:51,550 --> 00:01:54,150
+32
+00:01:59,700 --> 00:02:02,300
 We see in the graph
 that it is quite small.
 
-36
-00:01:54,300 --> 00:01:57,700
+33
+00:02:02,750 --> 00:02:06,150
 It's a bit hard to see
 things about small numbers.
 
-37
-00:01:57,850 --> 00:02:01,250
+34
+00:02:06,600 --> 00:02:10,000
 So instead we'll talk about 1/p₁%(n).
 
-38
-00:02:01,400 --> 00:02:04,400
+35
+00:02:10,450 --> 00:02:13,450
 Let's call this function r₁%(n),
 
-39
-00:02:05,450 --> 00:02:09,250
+36
+00:02:14,500 --> 00:02:18,300
 the "rarity" of the primes around n.
 
-40
-00:02:09,400 --> 00:02:13,400
-We see that this function
-increases, but rather slowly.
+37
+00:02:18,750 --> 00:02:22,950
+We see that this function increases,
+but rather slowly.
 
-41
-00:02:15,000 --> 00:02:17,200
+38
+00:02:24,550 --> 00:02:26,750
 Let's switch to a logarithmic scale.
 
-42
-00:02:18,050 --> 00:02:20,250
+39
+00:02:27,600 --> 00:02:29,800
 We see a clear pattern here:
 
-43
-00:02:20,400 --> 00:02:24,800
-to a very good approximation, it is
-a linear function of the logarithm.
+40
+00:02:30,250 --> 00:02:34,650
+to a very good approximation,
+it is a linear function of the logarithm.
 
-44
-00:02:24,950 --> 00:02:26,750
+41
+00:02:35,100 --> 00:02:36,900
 Let's check which one.
 
-45
-00:02:27,500 --> 00:02:29,500
-Again, a computer readily shows
+42
+00:02:37,650 --> 00:02:44,450
+Again, a computer shows that the natural
+logarithm approximates r₁%(n) well,
 
-46
-00:02:29,650 --> 00:02:34,250
-that the logarithm to base e
-approximates the function r₁%(n) well,
-
-47
-00:02:34,400 --> 00:02:37,600
+43
+00:02:44,700 --> 00:02:47,900
 at least in the range
 where we can compute.
 
-48
-00:02:39,200 --> 00:02:42,400
+44
+00:02:49,500 --> 00:02:52,700
 The choice of one percent
 was rather arbitrary.
 
-49
-00:02:42,550 --> 00:02:46,150
+45
+00:02:53,150 --> 00:02:56,750
 We can choose any other percentage
 and get a similar result.
 
-50
-00:02:46,300 --> 00:02:48,800
+46
+00:02:57,200 --> 00:02:59,700
 A 5% window
 
-51
-00:02:48,950 --> 00:02:51,450
+47
+00:02:59,850 --> 00:03:02,350
 A 20% window
 
-52
-00:02:53,050 --> 00:02:54,850
+48
+00:03:03,950 --> 00:03:05,750
 This looks great on the graph,
 
-53
-00:02:55,000 --> 00:02:58,800
-but how do we know this
-is a real phenomenon
+49
+00:03:06,000 --> 00:03:11,200
+but how do we know it is a real
+phenomenon that goes on to infinity,
 
-54
-00:02:58,950 --> 00:03:02,550
-that goes on to infinity, not
-something that only looks right
+50
+00:03:11,450 --> 00:03:15,450
+and not something that only looks
+right in the range we checked?
 
-55
-00:03:02,700 --> 00:03:04,500
-in the range we checked?
-
-56
-00:03:04,650 --> 00:03:06,850
+51
+00:03:15,900 --> 00:03:18,100
 How do we prove it?
 
-57
-00:03:07,000 --> 00:03:11,200
-And come to think of it, what on
-earth do we need to prove here?
+52
+00:03:18,550 --> 00:03:22,950
+And come to think of it,
+what on earth do we need to prove here?
 
-58
-00:03:11,350 --> 00:03:14,350
+53
+00:03:23,400 --> 00:03:26,600
 Well, the last question
 is fairly easy to answer.
 
-59
-00:03:14,500 --> 00:03:18,500
+54
+00:03:27,050 --> 00:03:31,050
 We want to compare our
 function with ln(n).
 
-60
-00:03:18,650 --> 00:03:22,850
+55
+00:03:31,500 --> 00:03:35,700
 One way to do this is to
 divide one by the other,
 
-61
-00:03:23,000 --> 00:03:27,600
+56
+00:03:35,950 --> 00:03:40,550
 and we want to say that this
 ratio is very close to 1.
 
-62
-00:03:27,750 --> 00:03:32,550
-Of course, when n is small, our
-statistics are not very good yet,
+57
+00:03:41,000 --> 00:03:46,000
+Of course, when n is small,
+our statistics are not very good yet,
 
-63
-00:03:32,700 --> 00:03:34,500
+58
+00:03:46,250 --> 00:03:48,050
 and there can be a deviation.
 
-64
-00:03:34,650 --> 00:03:37,850
-But as n grows, the
-deviation tends to vanish.
+59
+00:03:48,500 --> 00:03:51,900
+But as n grows,
+the deviation tends to vanish.
 
-65
-00:03:38,000 --> 00:03:40,600
+60
+00:03:52,350 --> 00:03:54,950
 That's what limits were invented for.
 
-66
-00:03:40,750 --> 00:03:44,150
+61
+00:03:55,400 --> 00:03:58,800
 So our claim is really
 that the limit is 1.
 
-67
-00:03:44,300 --> 00:03:47,300
-And as we said, any other
-percentage works too.
+62
+00:03:59,250 --> 00:04:02,450
+And as we said,
+any other percentage works too.
 
-68
-00:03:48,900 --> 00:03:53,300
-Gauss and Legendre conjectured
-this, in a slightly different form,
+63
+00:04:04,050 --> 00:04:08,850
+Gauss and Legendre conjectured this,
+in a slightly different form,
 
-69
-00:03:55,350 --> 00:03:58,350
+64
+00:04:09,500 --> 00:04:12,500
 and Hadamard and de la
 Vallée Poussin proved it.
 
-70
-00:03:58,500 --> 00:04:01,500
+65
+00:04:12,950 --> 00:04:15,950
 It is called the Prime Number Theorem,
 
-71
-00:04:01,650 --> 00:04:04,050
+66
+00:04:16,200 --> 00:04:18,600
 and it is the subject of this video.
 
-72
-00:04:04,200 --> 00:04:08,600
-Before the full proof, Chebyshev
-proved a weaker version,
+67
+00:04:19,050 --> 00:04:23,650
+Before the full proof,
+Chebyshev proved a weaker version,
 
-73
-00:04:08,750 --> 00:04:11,350
+68
+00:04:23,900 --> 00:04:26,500
 bounding the ratio from above and below
 
-74
-00:04:11,500 --> 00:04:13,500
+69
+00:04:26,750 --> 00:04:28,750
 but the limit is not found,
 
-75
-00:04:13,650 --> 00:04:16,650
+70
+00:04:29,000 --> 00:04:32,000
 and it fails for percentages
 that are too small.
 
-76
-00:04:16,800 --> 00:04:21,400
+71
+00:04:32,450 --> 00:04:37,050
 Later, Riemann developed a revolutionary
 strategy for such problems.
 
-77
-00:04:23,650 --> 00:04:28,250
-It was this strategy that eventually
-led to the solution of the problem
+72
+00:04:39,300 --> 00:04:46,300
+This strategy finally solved the problem,
+and led to much fascinating mathematics.
 
-78
-00:04:28,400 --> 00:04:30,800
-and to much fascinating mathematics.
-
-79
-00:04:31,400 --> 00:04:34,200
+73
+00:04:47,900 --> 00:04:50,700
 We won't prove the conjecture now.
 
-80
-00:04:34,350 --> 00:04:38,350
+74
+00:04:51,150 --> 00:04:55,150
 Nor will we tell you about
 Riemann's revolutionary ideas.
 
-81
-00:04:38,500 --> 00:04:41,500
+75
+00:04:55,600 --> 00:04:58,600
 We won't even explain Chebyshev's proof,
 
-82
-00:04:41,650 --> 00:04:43,450
+76
+00:04:58,850 --> 00:05:00,650
 although it isn't complicated.
 
-83
-00:04:43,600 --> 00:04:46,200
+77
+00:05:01,100 --> 00:05:03,700
 Instead, we'll prove a theorem of Mertens
 
-84
-00:04:46,350 --> 00:04:48,350
+78
+00:05:03,950 --> 00:05:05,950
 which doesn't imply the conjecture,
 
-85
-00:04:48,500 --> 00:04:52,300
+79
+00:05:06,200 --> 00:05:10,000
 but certainly makes a convincing
 case that it should be true.
 
-86
-00:04:55,550 --> 00:04:58,550
+80
+00:05:13,550 --> 00:05:16,550
 Let's look at the number n!
 
-87
-00:04:58,700 --> 00:05:00,700
+81
+00:05:17,000 --> 00:05:19,000
 and try to factor it.
 
-88
-00:05:00,850 --> 00:05:03,650
+82
+00:05:19,450 --> 00:05:22,250
 How many times does 2 appear in it?
 
-89
-00:05:03,800 --> 00:05:05,600
+83
+00:05:22,700 --> 00:05:24,500
 That's fairly easy:
 
-90
-00:05:05,750 --> 00:05:08,350
+84
+00:05:24,950 --> 00:05:27,550
 once for every even number up to n,
 
-91
-00:05:08,500 --> 00:05:11,900
+85
+00:05:27,800 --> 00:05:31,200
 once more for every number divisible by 4,
 
-92
-00:05:12,050 --> 00:05:13,850
+86
+00:05:31,650 --> 00:05:33,450
 and so on.
 
-93
-00:05:14,300 --> 00:05:16,500
+87
+00:05:33,900 --> 00:05:36,500
 What about 3? It's similar,
 
-94
-00:05:16,650 --> 00:05:19,250
+88
+00:05:36,750 --> 00:05:39,350
 and so on for all the primes up to n.
 
-95
-00:05:19,400 --> 00:05:21,600
+89
+00:05:39,800 --> 00:05:42,000
 Writing it this way is cumbersome,
 
-96
-00:05:21,750 --> 00:05:24,350
+90
+00:05:42,250 --> 00:05:44,850
 so we'll use product and sum notation.
 
-97
-00:05:25,950 --> 00:05:29,150
-These are quite large
-numbers, so let's take logs.
+91
+00:05:46,450 --> 00:05:49,850
+These are quite large numbers,
+so let's take logs.
 
-98
-00:05:29,300 --> 00:05:31,700
+92
+00:05:50,300 --> 00:05:52,700
 The log of a product is a sum of logs.
 
-99
-00:05:31,850 --> 00:05:34,650
+93
+00:05:53,150 --> 00:05:55,950
 We also know how to
 take the log of a power.
 
-100
-00:05:34,800 --> 00:05:38,800
-These integer parts are rather
-annoying, so let's drop them.
+94
+00:05:56,400 --> 00:06:00,600
+These integer parts are rather annoying,
+so let's drop them.
 
-101
-00:05:38,950 --> 00:05:40,750
+95
+00:06:00,850 --> 00:06:02,650
 That will give us an error term,
 
-102
-00:05:40,900 --> 00:05:43,300
+96
+00:06:02,900 --> 00:06:05,300
 so the equality is no longer exact.
 
-103
-00:05:43,450 --> 00:05:46,650
+97
+00:06:05,750 --> 00:06:08,950
 Now we can factor out n.
 
-104
-00:05:46,800 --> 00:05:49,000
+98
+00:06:09,400 --> 00:06:11,600
 We are left with geometric series.
 
-105
-00:05:49,150 --> 00:05:52,350
+99
+00:06:12,050 --> 00:06:15,250
 You surely remember the
 geometric series formula.
 
-106
-00:05:52,500 --> 00:05:56,100
+100
+00:06:15,700 --> 00:06:19,300
 We got n times the series of ln p/(p−1).
 
-107
-00:05:56,250 --> 00:05:59,650
+101
+00:06:19,750 --> 00:06:23,150
 Nothing will happen if
 we replace p−1 with p.
 
-108
-00:05:59,800 --> 00:06:01,800
+102
+00:06:23,600 --> 00:06:25,600
 We're approximating anyway.
 
-109
-00:06:03,400 --> 00:06:05,200
+103
+00:06:27,200 --> 00:06:29,000
 What about the other side?
 
-110
-00:06:05,350 --> 00:06:08,750
+104
+00:06:29,450 --> 00:06:33,050
 A factorial is a product,
 so again its log is a sum.
 
-111
-00:06:08,900 --> 00:06:11,500
+105
+00:06:33,500 --> 00:06:36,100
 This sum is not so easy to compute,
 
-112
-00:06:11,650 --> 00:06:13,650
+106
+00:06:36,350 --> 00:06:38,350
 but we can approximate it well.
 
-113
-00:06:13,800 --> 00:06:18,200
+107
+00:06:38,800 --> 00:06:43,200
 The point is that for 99%
 of the numbers up to n
 
-114
-00:06:18,350 --> 00:06:20,150
+108
+00:06:43,450 --> 00:06:45,250
 the log is roughly log n.
 
-115
-00:06:21,400 --> 00:06:25,200
-So, quite accurately, we
-can replace it with n ln(n).
+109
+00:06:46,500 --> 00:06:50,300
+So, quite accurately,
+we can replace it with n ln(n).
 
-116
-00:06:25,350 --> 00:06:27,350
+110
+00:06:50,750 --> 00:06:52,750
 Now we can cancel n.
 
-117
-00:06:27,500 --> 00:06:33,100
+111
+00:06:53,200 --> 00:06:58,800
 We got an inexact formula for the
 sum of ln p/p over the primes.
 
-118
-00:06:33,250 --> 00:06:37,050
+112
+00:06:59,250 --> 00:07:03,050
 And if we work hard enough,
 we can bound its error.
 
-119
-00:06:37,200 --> 00:06:39,000
+113
+00:07:03,500 --> 00:07:05,300
 This is Mertens' theorem.
 
-120
-00:06:40,600 --> 00:06:44,400
+114
+00:07:06,900 --> 00:07:10,700
 But how is this related to
 the Prime Number Theorem?
 
-121
-00:06:44,550 --> 00:06:46,750
+115
+00:07:11,150 --> 00:07:13,350
 Let's go back to the inexact form.
 
-122
-00:06:46,900 --> 00:06:48,700
+116
+00:07:13,800 --> 00:07:15,600
 There's an ln(n) here.
 
-123
-00:06:48,850 --> 00:06:51,850
+117
+00:07:16,050 --> 00:07:19,050
 You surely know another series like this.
 
-124
-00:06:52,000 --> 00:06:53,800
+118
+00:07:19,500 --> 00:07:21,300
 It's the harmonic series.
 
-125
-00:06:53,950 --> 00:06:55,750
+119
+00:07:21,750 --> 00:07:23,550
 So what did we get?
 
-126
-00:06:55,900 --> 00:06:58,300
+120
+00:07:24,000 --> 00:07:26,400
 So summing over all natural numbers
 
-127
-00:06:58,450 --> 00:07:01,250
+121
+00:07:26,650 --> 00:07:29,450
 is like summing over the primes only,
 
-128
-00:07:01,400 --> 00:07:04,600
+122
+00:07:29,700 --> 00:07:32,900
 but giving each prime p the weight ln(p).
 
-129
-00:07:04,750 --> 00:07:07,950
-It's just as if the primes around p
+123
+00:07:33,350 --> 00:07:39,750
+As if the primes around p were ln(p)
+times sparser than the integers,
 
-130
-00:07:08,100 --> 00:07:11,300
-were spread ln(p) times more
-sparsely than the integers,
+124
+00:07:40,000 --> 00:07:45,000
+and so they have to be counted with more
+weight to balance their contribution.
 
-131
-00:07:11,450 --> 00:07:14,250
-and so they have to be
-counted with more weight
-
-132
-00:07:14,400 --> 00:07:16,600
-to balance their contribution.
-
-133
-00:07:16,750 --> 00:07:20,750
+125
+00:07:45,450 --> 00:07:49,450
 But this is exactly what the
 Prime Number Theorem said.
 
-134
-00:07:20,900 --> 00:07:25,100
+126
+00:07:49,900 --> 00:07:54,300
 Well, this doesn't really
 prove the Prime Number Theorem,
 
-135
-00:07:25,250 --> 00:07:27,650
+127
+00:07:54,550 --> 00:07:56,950
 since it only tells us about averages.
 
-136
-00:07:27,800 --> 00:07:32,200
+128
+00:07:57,400 --> 00:08:01,800
 There could be regions with
-significantly fewer primes
+significantly fewer primes,
 
-137
-00:07:32,350 --> 00:07:34,550
+129
+00:08:02,050 --> 00:08:04,250
 and regions with significantly more.
 
-138
-00:07:34,700 --> 00:07:36,700
+130
+00:08:04,700 --> 00:08:06,700
 But it gives us a sense of it.
 
-139
-00:07:36,850 --> 00:07:40,850
-In fact, one can deduce from
-it the following weak version
+131
+00:08:07,150 --> 00:08:13,550
+In fact, it yields the following weak
+version of the Prime Number Theorem:
 
-140
-00:07:41,000 --> 00:07:43,400
-of the Prime Number Theorem:
-
-141
-00:07:45,000 --> 00:07:48,600
+132
+00:08:15,150 --> 00:08:18,750
 If the limit in the Prime
 Number Theorem exists,
 
-142
-00:07:48,750 --> 00:07:50,550
+133
+00:08:19,000 --> 00:08:20,800
 then it equals 1.
 
-143
-00:07:50,700 --> 00:07:52,500
+134
+00:08:21,250 --> 00:08:23,050
 Why is this true?
 
-144
-00:07:52,650 --> 00:07:56,850
-Because if the limit is not
-1, say it equals a number a,
+135
+00:08:23,500 --> 00:08:27,900
+Because if the limit is not 1,
+say it equals a number a,
 
-145
-00:07:57,000 --> 00:07:59,800
-it easily follows that the harmonic series
+136
+00:08:28,150 --> 00:08:33,750
+it easily follows that the harmonic
+series is about a times Mertens' series,
 
-146
-00:07:59,950 --> 00:08:02,750
-is about a times Mertens' series,
-
-147
-00:08:02,900 --> 00:08:04,900
+137
+00:08:34,000 --> 00:08:36,000
 contradicting Mertens' theorem.
 

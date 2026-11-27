@@ -1,53 +1,53 @@
 1
-00:00:00,800 --> 00:00:04,000
-These are quite large
-numbers, so let's take logs.
+00:00:00,800 --> 00:00:04,200
+These are quite large numbers,
+so let's take logs.
 
 2
-00:00:04,150 --> 00:00:06,550
+00:00:04,650 --> 00:00:07,050
 The log of a product is a sum of logs.
 
 3
-00:00:06,700 --> 00:00:09,500
+00:00:07,500 --> 00:00:10,300
 We also know how to
 take the log of a power.
 
 4
-00:00:09,650 --> 00:00:13,650
-These integer parts are rather
-annoying, so let's drop them.
+00:00:10,750 --> 00:00:14,950
+These integer parts are rather annoying,
+so let's drop them.
 
 5
-00:00:13,800 --> 00:00:15,600
+00:00:15,200 --> 00:00:17,000
 That will give us an error term,
 
 6
-00:00:15,750 --> 00:00:18,150
+00:00:17,250 --> 00:00:19,650
 so the equality is no longer exact.
 
 7
-00:00:18,300 --> 00:00:21,500
+00:00:20,100 --> 00:00:23,300
 Now we can factor out n.
 
 8
-00:00:21,650 --> 00:00:23,850
+00:00:23,750 --> 00:00:25,950
 We are left with geometric series.
 
 9
-00:00:24,000 --> 00:00:27,200
+00:00:26,400 --> 00:00:29,600
 You surely remember the
 geometric series formula.
 
 10
-00:00:27,350 --> 00:00:30,950
+00:00:30,050 --> 00:00:33,650
 We got n times the series of ln p/(p−1).
 
 11
-00:00:31,100 --> 00:00:34,500
+00:00:34,100 --> 00:00:37,500
 Nothing will happen if
 we replace p−1 with p.
 
 12
-00:00:34,650 --> 00:00:36,650
+00:00:37,950 --> 00:00:39,950
 We're approximating anyway.
 
