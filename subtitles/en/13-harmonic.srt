@@ -13,8 +13,7 @@ There's an ln(n) here.
 
 4
 00:00:09,050 --> 00:00:12,050
-You surely know another
-series that behaves like this.
+You surely know another series like this.
 
 5
 00:00:12,200 --> 00:00:14,000
@@ -26,8 +25,7 @@ So what did we get?
 
 7
 00:00:16,100 --> 00:00:18,500
-We got that summing over
-all the natural numbers
+So summing over all natural numbers
 
 8
 00:00:18,650 --> 00:00:21,450
@@ -67,8 +65,7 @@ prove the Prime Number Theorem,
 
 16
 00:00:45,450 --> 00:00:47,850
-because it only gives us
-information on average.
+since it only tells us about averages.
 
 17
 00:00:48,000 --> 00:00:52,400

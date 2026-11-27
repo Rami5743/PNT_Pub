@@ -37,8 +37,7 @@ what is the chance that it is prime?
 
 10
 00:00:22,550 --> 00:00:25,150
-Well, that is not a
-well-posed question either.
+Well, that's not well-posed either.
 
 11
 00:00:25,300 --> 00:00:28,500

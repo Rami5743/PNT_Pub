@@ -18,8 +18,8 @@ of primes within one percent of it.
 
 5
 00:00:17,500 --> 00:00:21,500
-We got a graph of the probability
-that a number within one percent of n
+We get a graph of the chance that
+a number within one percent of n
 
 6
 00:00:21,650 --> 00:00:24,050

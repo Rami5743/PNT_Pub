@@ -21,8 +21,7 @@ Instead, we'll prove a theorem of Mertens
 
 6
 00:00:15,750 --> 00:00:17,750
-which, admittedly, doesn't
-imply the conjecture,
+which doesn't imply the conjecture,
 
 7
 00:00:17,900 --> 00:00:21,700

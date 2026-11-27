@@ -4,8 +4,8 @@ What about the other side?
 
 2
 00:00:02,750 --> 00:00:06,150
-A factorial is a product, and again
-the log of a product is a sum.
+A factorial is a product,
+so again its log is a sum.
 
 3
 00:00:06,300 --> 00:00:08,900
@@ -13,7 +13,7 @@ This sum is not so easy to compute,
 
 4
 00:00:09,050 --> 00:00:11,050
-but it can be approximated quite well.
+but we can approximate it well.
 
 5
 00:00:11,200 --> 00:00:15,600

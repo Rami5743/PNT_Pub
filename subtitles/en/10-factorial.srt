@@ -8,8 +8,7 @@ and try to factor it.
 
 3
 00:00:06,100 --> 00:00:08,900
-How many times does 2
-appear in the factorization?
+How many times does 2 appear in it?
 
 4
 00:00:09,050 --> 00:00:10,850
@@ -29,8 +28,7 @@ and so on.
 
 8
 00:00:19,550 --> 00:00:21,750
-What about 3? The
-situation here is similar,
+What about 3? It's similar,
 
 9
 00:00:21,900 --> 00:00:24,500
@@ -38,8 +36,7 @@ and so on for all the primes up to n.
 
 10
 00:00:24,650 --> 00:00:26,850
-It's rather cumbersome
-to write it this way,
+Writing it this way is cumbersome,
 
 11
 00:00:27,000 --> 00:00:29,600

@@ -37,8 +37,7 @@ what is the chance that it is prime?
 
 10
 00:00:22,550 --> 00:00:25,150
-Well, that is not a
-well-posed question either.
+Well, that's not well-posed either.
 
 11
 00:00:25,300 --> 00:00:28,500
@@ -83,8 +82,7 @@ primes there are in this range
 
 20
 00:00:55,500 --> 00:00:58,100
-and divide the result by
-the size of the range.
+and divide by the size of the range.
 
 21
 00:00:58,850 --> 00:01:00,650
@@ -120,8 +118,8 @@ of primes within one percent of it.
 
 28
 00:01:26,850 --> 00:01:30,850
-We got a graph of the probability
-that a number within one percent of n
+We get a graph of the chance that
+a number within one percent of n
 
 29
 00:01:31,000 --> 00:01:33,400
@@ -194,8 +192,7 @@ Let's check which one.
 
 45
 00:02:27,500 --> 00:02:29,500
-Here too, with a computer
-it is easy to see
+Again, a computer readily shows
 
 46
 00:02:29,650 --> 00:02:34,250
@@ -235,8 +232,7 @@ but how do we prove it works for every n?
 
 54
 00:02:58,350 --> 00:03:00,950
-Or rather, before that,
-how do we even state it?
+Or rather, first: how do we even state it?
 
 55
 00:03:01,100 --> 00:03:03,700
@@ -273,8 +269,7 @@ deviation tends to vanish.
 
 62
 00:03:26,250 --> 00:03:28,850
-That is what the notion of
-a limit was invented for.
+That's what limits were invented for.
 
 63
 00:03:29,000 --> 00:03:32,400
@@ -283,18 +278,18 @@ that the limit is 1.
 
 64
 00:03:32,550 --> 00:03:35,550
-And as we said, we can also
-take any other percentage.
+And as we said, any other
+percentage works too.
 
 65
 00:03:37,150 --> 00:03:40,550
-This claim, in a slightly different
-form, was conjectured by Gauss
+Gauss conjectured this, in
+a slightly different form,
 
 66
 00:03:42,600 --> 00:03:45,600
-and proved by Hadamard
-and de la Vallée Poussin.
+and Hadamard and de la
+Vallée Poussin proved it.
 
 67
 00:03:45,750 --> 00:03:48,750
@@ -311,8 +306,7 @@ proved a weaker version,
 
 70
 00:03:56,000 --> 00:03:58,600
-in which the ratio is
-bounded from above and below
+bounding the ratio from above and below
 
 71
 00:03:58,750 --> 00:04:00,750
@@ -320,8 +314,8 @@ but the limit is not found,
 
 72
 00:04:00,900 --> 00:04:03,900
-and which doesn't work for
-percentages that are too small either.
+and it fails for percentages
+that are too small.
 
 73
 00:04:04,050 --> 00:04:08,650
@@ -335,7 +329,7 @@ led to the solution of the problem
 
 75
 00:04:15,650 --> 00:04:18,050
-and to a lot more fascinating mathematics.
+and to much fascinating mathematics.
 
 76
 00:04:19,650 --> 00:04:22,450
@@ -360,8 +354,7 @@ Instead, we'll prove a theorem of Mertens
 
 81
 00:04:34,600 --> 00:04:36,600
-which, admittedly, doesn't
-imply the conjecture,
+which doesn't imply the conjecture,
 
 82
 00:04:36,750 --> 00:04:40,550
@@ -378,8 +371,7 @@ and try to factor it.
 
 85
 00:04:49,100 --> 00:04:51,900
-How many times does 2
-appear in the factorization?
+How many times does 2 appear in it?
 
 86
 00:04:52,050 --> 00:04:53,850
@@ -399,8 +391,7 @@ and so on.
 
 90
 00:05:02,550 --> 00:05:04,750
-What about 3? The
-situation here is similar,
+What about 3? It's similar,
 
 91
 00:05:04,900 --> 00:05:07,500
@@ -408,8 +399,7 @@ and so on for all the primes up to n.
 
 92
 00:05:07,650 --> 00:05:09,850
-It's rather cumbersome
-to write it this way,
+Writing it this way is cumbersome,
 
 93
 00:05:10,000 --> 00:05:12,600
@@ -422,8 +412,7 @@ numbers, so let's take logs.
 
 95
 00:05:17,550 --> 00:05:19,950
-The log of a product
-is the sum of the logs.
+The log of a product is a sum of logs.
 
 96
 00:05:20,100 --> 00:05:22,900
@@ -441,7 +430,7 @@ That will give us an error term,
 
 99
 00:05:29,150 --> 00:05:31,550
-so the equality will no longer be exact.
+so the equality is no longer exact.
 
 100
 00:05:31,700 --> 00:05:34,900
@@ -454,7 +443,7 @@ We are left with geometric series.
 102
 00:05:37,400 --> 00:05:40,600
 You surely remember the
-formula for a geometric series.
+geometric series formula.
 
 103
 00:05:40,750 --> 00:05:44,350
@@ -467,7 +456,7 @@ we replace p−1 with p.
 
 105
 00:05:48,050 --> 00:05:50,050
-We are working approximately anyway.
+We're approximating anyway.
 
 106
 00:05:51,650 --> 00:05:53,450
@@ -475,8 +464,8 @@ What about the other side?
 
 107
 00:05:53,600 --> 00:05:57,000
-A factorial is a product, and again
-the log of a product is a sum.
+A factorial is a product,
+so again its log is a sum.
 
 108
 00:05:57,150 --> 00:05:59,750
@@ -484,7 +473,7 @@ This sum is not so easy to compute,
 
 109
 00:05:59,900 --> 00:06:01,900
-but it can be approximated quite well.
+but we can approximate it well.
 
 110
 00:06:02,050 --> 00:06:06,450
@@ -533,8 +522,7 @@ There's an ln(n) here.
 
 120
 00:06:37,100 --> 00:06:40,100
-You surely know another
-series that behaves like this.
+You surely know another series like this.
 
 121
 00:06:40,250 --> 00:06:42,050
@@ -546,8 +534,7 @@ So what did we get?
 
 123
 00:06:44,150 --> 00:06:46,550
-We got that summing over
-all the natural numbers
+So summing over all natural numbers
 
 124
 00:06:46,700 --> 00:06:49,500
@@ -587,8 +574,7 @@ prove the Prime Number Theorem,
 
 132
 00:07:13,500 --> 00:07:15,900
-because it only gives us
-information on average.
+since it only tells us about averages.
 
 133
 00:07:16,050 --> 00:07:20,450
@@ -632,8 +618,7 @@ Because if the limit is not
 
 142
 00:07:45,250 --> 00:07:48,050
-then it is easy to deduce
-that the harmonic series
+it easily follows that the harmonic series
 
 143
 00:07:48,200 --> 00:07:51,000
@@ -641,5 +626,5 @@ is about a times Mertens' series,
 
 144
 00:07:51,150 --> 00:07:53,150
-and that contradicts Mertens' theorem.
+contradicting Mertens' theorem.
 

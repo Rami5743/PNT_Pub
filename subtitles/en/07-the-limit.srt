@@ -8,8 +8,7 @@ but how do we prove it works for every n?
 
 3
 00:00:06,100 --> 00:00:08,700
-Or rather, before that,
-how do we even state it?
+Or rather, first: how do we even state it?
 
 4
 00:00:08,850 --> 00:00:11,450
@@ -46,8 +45,7 @@ deviation tends to vanish.
 
 11
 00:00:34,000 --> 00:00:36,600
-That is what the notion of
-a limit was invented for.
+That's what limits were invented for.
 
 12
 00:00:36,750 --> 00:00:40,150
@@ -56,6 +54,6 @@ that the limit is 1.
 
 13
 00:00:40,300 --> 00:00:43,300
-And as we said, we can also
-take any other percentage.
+And as we said, any other
+percentage works too.
 

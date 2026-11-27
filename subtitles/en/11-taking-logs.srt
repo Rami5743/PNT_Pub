@@ -5,8 +5,7 @@ numbers, so let's take logs.
 
 2
 00:00:04,150 --> 00:00:06,550
-The log of a product
-is the sum of the logs.
+The log of a product is a sum of logs.
 
 3
 00:00:06,700 --> 00:00:09,500
@@ -24,7 +23,7 @@ That will give us an error term,
 
 6
 00:00:15,750 --> 00:00:18,150
-so the equality will no longer be exact.
+so the equality is no longer exact.
 
 7
 00:00:18,300 --> 00:00:21,500
@@ -37,7 +36,7 @@ We are left with geometric series.
 9
 00:00:24,000 --> 00:00:27,200
 You surely remember the
-formula for a geometric series.
+geometric series formula.
 
 10
 00:00:27,350 --> 00:00:30,950
@@ -50,5 +49,5 @@ we replace p−1 with p.
 
 12
 00:00:34,650 --> 00:00:36,650
-We are working approximately anyway.
+We're approximating anyway.
 

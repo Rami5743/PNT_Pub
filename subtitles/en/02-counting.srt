@@ -10,8 +10,7 @@ primes there are in this range
 
 3
 00:00:08,700 --> 00:00:11,300
-and divide the result by
-the size of the range.
+and divide by the size of the range.
 
 4
 00:00:12,050 --> 00:00:13,850
