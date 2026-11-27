@@ -31,7 +31,16 @@
     font-family: "Assistant", "Segoe UI", "Arial Hebrew", Arial, sans-serif;
     line-height: 1.5;
   }
-  header { padding: 24px 16px 8px; max-width: 1280px; margin: 0 auto; }
+  header { padding: 16px 16px 8px; max-width: 1280px; margin: 0 auto; }
+  .langs { display: flex; gap: 8px; margin-bottom: 12px; }
+  .langs button {
+    display: inline-flex; align-items: center; gap: 7px;
+    background: var(--panel); color: var(--text);
+    border: 1px solid var(--line); border-radius: 999px;
+    padding: 5px 12px 5px 8px; font: inherit; font-size: 0.9rem; cursor: pointer;
+  }
+  .langs button[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+  .langs svg { height: 16px; border-radius: 2px; display: block; box-shadow: 0 0 0 1px rgba(255,255,255,.15); }
   h1 { margin: 0; font-size: 1.7rem; font-weight: 600; }
   h1 span { color: var(--accent); }
   main {
@@ -89,7 +98,7 @@
     width: 100%;
     gap: 10px;
     align-items: baseline;
-    text-align: right;
+    text-align: start;
     background: none;
     border: 0;
     border-radius: 4px;
@@ -110,6 +119,16 @@
 </head>
 <body>
 <header>
+  <div class="langs" role="group" aria-label="שפה / Language">
+    <button type="button" data-set="he" aria-pressed="true" title="עברית">
+      <svg viewBox="0 0 220 160" style="width:22px" aria-hidden="true"><rect width="220" height="160" fill="#fff"/><rect y="15" width="220" height="25" fill="#0038b8"/><rect y="120" width="220" height="25" fill="#0038b8"/><g fill="none" stroke="#0038b8" stroke-width="5.5"><path d="M110 52 L136.5 98 L83.5 98 Z"/><path d="M110 108 L83.5 62 L136.5 62 Z"/></g></svg>
+      <span>עברית</span>
+    </button>
+    <button type="button" data-set="en" aria-pressed="false" title="English">
+      <svg viewBox="0 0 190 100" style="width:30px" aria-hidden="true"><rect width="190" height="100" fill="#fff"/><rect y="0.000" width="190" height="7.692" fill="#B22234"/><rect y="15.385" width="190" height="7.692" fill="#B22234"/><rect y="30.769" width="190" height="7.692" fill="#B22234"/><rect y="46.154" width="190" height="7.692" fill="#B22234"/><rect y="61.538" width="190" height="7.692" fill="#B22234"/><rect y="76.923" width="190" height="7.692" fill="#B22234"/><rect y="92.308" width="190" height="7.692" fill="#B22234"/><rect width="76" height="53.846" fill="#3C3B6E"/><g fill="#fff"><circle cx="6.33" cy="5.38" r="2.2"/><circle cx="19.00" cy="5.38" r="2.2"/><circle cx="31.67" cy="5.38" r="2.2"/><circle cx="44.33" cy="5.38" r="2.2"/><circle cx="57.00" cy="5.38" r="2.2"/><circle cx="69.67" cy="5.38" r="2.2"/><circle cx="12.67" cy="10.77" r="2.2"/><circle cx="25.33" cy="10.77" r="2.2"/><circle cx="38.00" cy="10.77" r="2.2"/><circle cx="50.67" cy="10.77" r="2.2"/><circle cx="63.33" cy="10.77" r="2.2"/><circle cx="6.33" cy="16.15" r="2.2"/><circle cx="19.00" cy="16.15" r="2.2"/><circle cx="31.67" cy="16.15" r="2.2"/><circle cx="44.33" cy="16.15" r="2.2"/><circle cx="57.00" cy="16.15" r="2.2"/><circle cx="69.67" cy="16.15" r="2.2"/><circle cx="12.67" cy="21.54" r="2.2"/><circle cx="25.33" cy="21.54" r="2.2"/><circle cx="38.00" cy="21.54" r="2.2"/><circle cx="50.67" cy="21.54" r="2.2"/><circle cx="63.33" cy="21.54" r="2.2"/><circle cx="6.33" cy="26.92" r="2.2"/><circle cx="19.00" cy="26.92" r="2.2"/><circle cx="31.67" cy="26.92" r="2.2"/><circle cx="44.33" cy="26.92" r="2.2"/><circle cx="57.00" cy="26.92" r="2.2"/><circle cx="69.67" cy="26.92" r="2.2"/><circle cx="12.67" cy="32.31" r="2.2"/><circle cx="25.33" cy="32.31" r="2.2"/><circle cx="38.00" cy="32.31" r="2.2"/><circle cx="50.67" cy="32.31" r="2.2"/><circle cx="63.33" cy="32.31" r="2.2"/><circle cx="6.33" cy="37.69" r="2.2"/><circle cx="19.00" cy="37.69" r="2.2"/><circle cx="31.67" cy="37.69" r="2.2"/><circle cx="44.33" cy="37.69" r="2.2"/><circle cx="57.00" cy="37.69" r="2.2"/><circle cx="69.67" cy="37.69" r="2.2"/><circle cx="12.67" cy="43.08" r="2.2"/><circle cx="25.33" cy="43.08" r="2.2"/><circle cx="38.00" cy="43.08" r="2.2"/><circle cx="50.67" cy="43.08" r="2.2"/><circle cx="63.33" cy="43.08" r="2.2"/><circle cx="6.33" cy="48.46" r="2.2"/><circle cx="19.00" cy="48.46" r="2.2"/><circle cx="31.67" cy="48.46" r="2.2"/><circle cx="44.33" cy="48.46" r="2.2"/><circle cx="57.00" cy="48.46" r="2.2"/><circle cx="69.67" cy="48.46" r="2.2"/></g></svg>
+      <span>English</span>
+    </button>
+  </div>
   <h1 id="site-title">משפט המספרים הראשוניים</h1>
 </header>
 <main>
@@ -117,7 +136,7 @@
     <video id="video" controls preload="metadata" playsinline crossorigin="anonymous"></video>
     <div class="bar">
       <h2 id="now-title"></h2>
-      <label for="subs">כתוביות</label>
+      <label for="subs" id="subs-label">כתוביות</label>
       <select id="subs"><option value="">ללא</option></select>
     </div>
     <div class="downloads" id="downloads"></div>
@@ -135,12 +154,32 @@
   var nowTitle = document.getElementById("now-title");
   var downloads = document.getElementById("downloads");
 
+  var root = document.documentElement;
+  var UI = {
+    he: { dir: "rtl", subs: "כתוביות", none: "ללא", videos: "סרטונים",
+          scenes: "הסצנות, כל אחת כסרטון נפרד:", download: "הורדת הסרטון",
+          subsFile: "כתוביות", error: "לא ניתן לטעון את רשימת הסרטונים (manifest.json)." },
+    en: { dir: "ltr", subs: "Subtitles", none: "None", videos: "Videos",
+          scenes: "The scenes, each as a separate video:", download: "Download the video",
+          subsFile: "Subtitles", error: "Could not load the list of videos (manifest.json)." }
+  };
+  // The page opens in Hebrew (the owner's choice), or in English with #en in
+  // the address. Choosing a language also sets the subtitles to it.
+  var lang = location.hash === "#en" ? "en" : "he";
+  var currentFound = [];       // the subtitle languages the current video has
+
   var manifest = null;
   var current = null;          // the entry being played
   var vttCache = {};           // "<lang>/<id>" -> blob URL, or null if absent
   // The page opens on the whole video with Hebrew subtitles (the owner's
   // choice). A change of subtitles then holds while the viewer switches videos.
-  var wantedSubs = "he";
+  var wantedSubs = lang;
+
+  function t(key) { return UI[lang][key]; }
+  // The video in the page's language: the English version differs only in
+  // the words on screen, and a scene without words shares the Hebrew file.
+  function fileOf(entry) { return (entry.files && entry.files[lang]) || entry.file; }
+  function titleOf(entry) { return (entry.titles && entry.titles[lang]) || entry.title; }
 
   function clock(seconds) {
     var s = Math.round(seconds);
@@ -183,14 +222,14 @@
 
   function play(entry, startAt, autoplay) {
     current = entry;
-    nowTitle.textContent = entry.number ? entry.number + ". " + entry.title : entry.title;
+    showTitle();
 
     Array.prototype.forEach.call(list.querySelectorAll("button[data-id]"), function (b) {
       b.setAttribute("aria-current", b.dataset.id === entry.id ? "true" : "false");
     });
 
     Array.prototype.forEach.call(video.querySelectorAll("track"), function (t) { t.remove(); });
-    video.src = entry.file;
+    video.src = fileOf(entry);
     if (startAt) {
       video.addEventListener("loadedmetadata", function seek() {
         video.removeEventListener("loadedmetadata", seek);
@@ -198,8 +237,8 @@
       });
     }
 
-    var links = ['<a href="' + entry.file + '" download>הורדת הסרטון</a>'];
     downloads.innerHTML = "";
+    currentFound = [];
 
     var wanted = wantedSubs;
     subsSelect.length = 1;
@@ -221,8 +260,7 @@
         opt.value = f.lang.code;
         opt.textContent = f.lang.label;
         subsSelect.appendChild(opt);
-        links.push('<a href="subtitles/' + f.lang.code + "/" + entry.id +
-                   '.srt" download>כתוביות (' + f.lang.label + ")</a>");
+        currentFound.push(f.lang);
       });
       var available = Array.prototype.some.call(subsSelect.options,
         function (o) { return o.value === wanted; });
@@ -230,10 +268,71 @@
       // Tracks are registered asynchronously in some browsers.
       setTimeout(applySubtitleChoice, 0);
       applySubtitleChoice();
-      downloads.innerHTML = links.join(" · ");
+      showDownloads();
     });
 
     if (autoplay) video.play().catch(function () {});
+  }
+
+  function showTitle() {
+    if (!current) return;
+    nowTitle.textContent = current.number ? current.number + ". " + titleOf(current) : titleOf(current);
+  }
+
+  function showDownloads() {
+    if (!current) return;
+    var links = ['<a href="' + fileOf(current) + '" download></a>'];
+    currentFound.forEach(function (l) {
+      links.push('<a href="subtitles/' + l.code + "/" + current.id + '.srt" download></a>');
+    });
+    downloads.innerHTML = links.join(" · ");
+    var a = downloads.querySelectorAll("a");
+    a[0].textContent = t("download");
+    currentFound.forEach(function (l, i) { a[i + 1].textContent = t("subsFile") + " (" + l.label + ")"; });
+  }
+
+  // Switch the page to a language: its text, its direction, the titles, and
+  // the subtitles, which follow the language chosen.
+  function setLang(next) {
+    lang = UI[next] ? next : "he";
+    root.lang = lang;
+    root.dir = t("dir");
+    document.querySelectorAll(".langs button").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.dataset.set === lang ? "true" : "false");
+    });
+    document.getElementById("subs-label").textContent = t("subs");
+    subsSelect.options[0].textContent = t("none");
+    list.setAttribute("aria-label", t("videos"));
+    if (manifest) {
+      var title = (manifest.titles && manifest.titles[lang]) || manifest.title;
+      document.title = title;
+      document.getElementById("site-title").textContent = title;
+      list.querySelectorAll("button[data-id]").forEach(function (b) {
+        b.querySelector(".title").textContent = titleOf(b._entry);
+      });
+      var hint = list.querySelector(".hint");
+      if (hint) hint.textContent = t("scenes");
+    }
+    showTitle();
+    showDownloads();
+    // the same moment, in the version of the new language
+    if (current && video.getAttribute("src") && video.getAttribute("src") !== fileOf(current)) {
+      var at = video.currentTime, wasPlaying = !video.paused;
+      var tracks = Array.prototype.slice.call(video.querySelectorAll("track"));
+      video.src = fileOf(current);
+      tracks.forEach(function (tr) { video.appendChild(tr); });
+      video.addEventListener("loadedmetadata", function resume() {
+        video.removeEventListener("loadedmetadata", resume);
+        video.currentTime = at;
+        applySubtitleChoice();
+        if (wasPlaying) video.play().catch(function () {});
+      });
+    }
+    wantedSubs = lang;
+    if (Array.prototype.some.call(subsSelect.options, function (o) { return o.value === lang; })) {
+      subsSelect.value = lang;
+      applySubtitleChoice();
+    }
   }
 
   function button(entry, extraClass, onClick) {
@@ -245,20 +344,19 @@
       '<span class="num">' + (entry.number ? String(entry.number) : "") + "</span>" +
       '<span class="title"></span>' +
       '<span class="time">' + clock(entry.duration) + "</span>";
-    b.querySelector(".title").textContent = entry.title;
+    b._entry = entry;
+    b.querySelector(".title").textContent = titleOf(entry);
     b.addEventListener("click", onClick);
     return b;
   }
 
   function build() {
-    document.title = manifest.title;
-    document.getElementById("site-title").textContent = manifest.title;
 
     var full = manifest.full;
     list.appendChild(button(full, "full", function () { play(full, 0, true); }));
     var hint = document.createElement("div");
     hint.className = "hint";
-    hint.textContent = "הסצנות, כל אחת כסרטון נפרד:";
+    hint.textContent = t("scenes");
     list.appendChild(hint);
     manifest.scenes.forEach(function (scene) {
       list.appendChild(button(scene, "", function () { play(scene, 0, true); }));
@@ -269,14 +367,24 @@
       applySubtitleChoice();
     });
 
+    setLang(lang);
     play(full, 0, false);
   }
+
+  document.querySelectorAll(".langs button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      setLang(b.dataset.set);
+      history.replaceState(null, "", b.dataset.set === "he" ? location.pathname : "#en");
+    });
+  });
+  setLang(lang);
 
   fetch("manifest.json")
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (m) { manifest = m; build(); })
     .catch(function (e) {
-      nowTitle.innerHTML = '<span class="error">לא ניתן לטעון את רשימת הסרטונים (manifest.json).</span>';
+      nowTitle.innerHTML = '<span class="error"></span>';
+      nowTitle.firstChild.textContent = t("error");
     });
 })();
 </script>
