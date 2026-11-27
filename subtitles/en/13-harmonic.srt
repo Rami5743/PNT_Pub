@@ -1,79 +1,79 @@
 1
-00:00:00,800 --> 00:00:04,600
+00:00:00,727 --> 00:00:04,527
 But how is this related to
 the Prime Number Theorem?
 
 2
-00:00:05,050 --> 00:00:07,250
+00:00:04,977 --> 00:00:07,177
 Let's go back to the inexact form.
 
 3
-00:00:07,700 --> 00:00:09,500
+00:00:07,627 --> 00:00:09,427
 There's an ln(n) here.
 
 4
-00:00:09,950 --> 00:00:12,950
+00:00:09,877 --> 00:00:12,877
 You surely know another series like this.
 
 5
-00:00:13,400 --> 00:00:15,200
+00:00:13,327 --> 00:00:15,127
 It's the harmonic series.
 
 6
-00:00:15,650 --> 00:00:17,450
+00:00:15,577 --> 00:00:17,377
 So what did we get?
 
 7
-00:00:17,900 --> 00:00:20,300
+00:00:17,827 --> 00:00:20,227
 So summing over all natural numbers
 
 8
-00:00:20,550 --> 00:00:23,350
+00:00:20,477 --> 00:00:23,277
 is like summing over the primes only,
 
 9
-00:00:23,600 --> 00:00:26,800
+00:00:23,527 --> 00:00:25,557
 but giving each prime p the weight ln(p).
 
 10
-00:00:27,250 --> 00:00:33,650
+00:00:26,007 --> 00:00:32,407
 As if the primes around p were ln(p)
 times sparser than the integers,
 
 11
-00:00:33,900 --> 00:00:38,900
+00:00:32,657 --> 00:00:37,434
 and so they have to be counted with more
 weight to balance their contribution.
 
 12
-00:00:39,350 --> 00:00:43,550
+00:00:37,884 --> 00:00:41,994
 But this is exactly what the
 Prime Number Theorem says.
 
 13
-00:00:44,000 --> 00:00:48,400
+00:00:42,444 --> 00:00:46,844
 Well, this doesn't really
 prove the Prime Number Theorem,
 
 14
-00:00:48,650 --> 00:00:51,050
+00:00:47,094 --> 00:00:49,494
 since it only tells us about averages.
 
 15
-00:00:51,500 --> 00:00:55,900
+00:00:49,944 --> 00:00:54,344
 There could be regions with
 significantly fewer primes,
 
 16
-00:00:56,150 --> 00:00:58,350
+00:00:54,594 --> 00:00:56,605
 and regions with significantly more.
 
 17
-00:00:58,800 --> 00:01:00,800
+00:00:57,055 --> 00:00:59,055
 But it gives us a sense of it.
 
 18
-00:01:01,250 --> 00:01:07,650
+00:00:59,505 --> 00:01:05,905
 In fact, it yields the following weak
 version of the Prime Number Theorem:
 

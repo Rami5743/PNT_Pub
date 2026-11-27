@@ -1,28 +1,28 @@
 1
-00:00:00,800 --> 00:00:04,000
+00:00:00,724 --> 00:00:03,924
 We have a computer,
 so this is not a hard question.
 
 2
-00:00:04,450 --> 00:00:09,050
+00:00:04,374 --> 00:00:08,974
 We just need to count how many
 primes there are in this range
 
 3
-00:00:09,200 --> 00:00:11,800
+00:00:09,124 --> 00:00:11,242
 and divide by the size of the range.
 
 4
-00:00:12,550 --> 00:00:14,350
+00:00:11,965 --> 00:00:13,765
 Well, we got an answer.
 
 5
-00:00:14,800 --> 00:00:18,400
+00:00:14,215 --> 00:00:17,815
 This wasn't a very
 informative question either...
 
 6
-00:00:18,850 --> 00:00:22,850
+00:00:18,265 --> 00:00:22,265
 We asked about a specific number
 and got a specific answer.
 

@@ -1,27 +1,27 @@
 1
-00:00:00,800 --> 00:00:04,400
+00:00:00,721 --> 00:00:04,321
 If the limit in the Prime
 Number Theorem exists,
 
 2
-00:00:04,650 --> 00:00:06,450
+00:00:04,571 --> 00:00:06,159
 then it equals 1.
 
 3
-00:00:06,900 --> 00:00:08,700
+00:00:06,609 --> 00:00:08,409
 Why is this true?
 
 4
-00:00:09,150 --> 00:00:13,550
+00:00:08,859 --> 00:00:13,259
 Because if the limit is not 1,
 say it equals a number a,
 
 5
-00:00:13,800 --> 00:00:19,400
+00:00:13,509 --> 00:00:19,109
 it easily follows that the harmonic
 series is about a times Mertens' series,
 
 6
-00:00:19,650 --> 00:00:21,650
+00:00:19,359 --> 00:00:19,530
 contradicting Mertens' theorem.
 

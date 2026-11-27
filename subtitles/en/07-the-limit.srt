@@ -1,71 +1,71 @@
 1
-00:00:00,800 --> 00:00:02,600
+00:00:00,725 --> 00:00:02,525
 This looks great on the graph,
 
 2
-00:00:02,850 --> 00:00:08,050
+00:00:02,775 --> 00:00:07,975
 but how do we know it is a real
 phenomenon that goes on to infinity,
 
 3
-00:00:08,300 --> 00:00:12,300
+00:00:08,225 --> 00:00:12,225
 and not something that only looks right in
 the picture and in the range we checked?
 
 4
-00:00:12,750 --> 00:00:14,950
+00:00:12,675 --> 00:00:14,875
 How do we prove it?
 
 5
-00:00:15,400 --> 00:00:19,800
+00:00:15,325 --> 00:00:19,725
 And come to think of it,
 what on earth do we need to prove here?
 
 6
-00:00:20,250 --> 00:00:23,450
+00:00:20,175 --> 00:00:23,375
 Well, the last question
 is fairly easy to answer.
 
 7
-00:00:23,900 --> 00:00:27,900
+00:00:23,825 --> 00:00:27,825
 We want to compare our
 function with ln(n).
 
 8
-00:00:28,350 --> 00:00:32,550
+00:00:28,275 --> 00:00:32,475
 One way to do this is to
 divide one by the other,
 
 9
-00:00:32,800 --> 00:00:37,400
+00:00:32,725 --> 00:00:36,937
 and we want to say that this
 ratio is very close to 1.
 
 10
-00:00:37,850 --> 00:00:42,850
+00:00:37,387 --> 00:00:42,387
 Of course, when n is small,
 our statistics are not very good yet,
 
 11
-00:00:43,100 --> 00:00:44,900
+00:00:42,637 --> 00:00:44,437
 and there can be a deviation.
 
 12
-00:00:45,350 --> 00:00:48,750
+00:00:44,887 --> 00:00:48,287
 But as n grows,
 the deviation tends to vanish.
 
 13
-00:00:49,200 --> 00:00:51,800
+00:00:48,737 --> 00:00:51,337
 That's what limits were invented for.
 
 14
-00:00:52,250 --> 00:00:55,650
+00:00:51,787 --> 00:00:55,187
 So our claim is really
 that the limit is 1.
 
 15
-00:00:56,100 --> 00:00:59,300
+00:00:55,637 --> 00:00:58,837
 And as we said,
 any other percentage works too.
 

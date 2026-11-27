@@ -1,30 +1,30 @@
 1
-00:00:00,800 --> 00:00:03,600
+00:00:00,728 --> 00:00:03,528
 We won't prove the theorem now.
 
 2
-00:00:04,050 --> 00:00:08,050
+00:00:03,978 --> 00:00:07,978
 Nor will we tell you about
 Riemann's revolutionary ideas.
 
 3
-00:00:08,500 --> 00:00:11,500
+00:00:08,428 --> 00:00:11,428
 We won't even explain Chebyshev's proof,
 
 4
-00:00:11,750 --> 00:00:13,550
+00:00:11,678 --> 00:00:13,478
 although it isn't complicated.
 
 5
-00:00:14,000 --> 00:00:16,600
+00:00:13,928 --> 00:00:16,528
 Instead, we'll prove a theorem of Mertens
 
 6
-00:00:16,850 --> 00:00:18,650
+00:00:16,778 --> 00:00:18,578
 which doesn't imply it,
 
 7
-00:00:18,900 --> 00:00:22,300
+00:00:18,828 --> 00:00:21,168
 but certainly makes a convincing
 case that it should be true.
 

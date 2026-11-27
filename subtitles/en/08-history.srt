@@ -13,34 +13,34 @@ Vallée Poussin proved it.
 It is called the Prime Number Theorem,
 
 4
-00:00:12,950 --> 00:00:15,350
+00:00:12,950 --> 00:00:15,022
 and it is the subject of this video.
 
 5
-00:00:15,800 --> 00:00:20,400
+00:00:15,472 --> 00:00:20,072
 Before the full proof,
 Chebyshev proved a weaker version,
 
 6
-00:00:20,650 --> 00:00:23,250
+00:00:20,322 --> 00:00:22,922
 bounding the ratio from above and below
 
 7
-00:00:23,500 --> 00:00:25,500
+00:00:23,172 --> 00:00:25,172
 but the limit is not found,
 
 8
-00:00:25,750 --> 00:00:28,750
+00:00:25,422 --> 00:00:28,422
 and it fails for percentages
 that are too small.
 
 9
-00:00:29,200 --> 00:00:33,800
+00:00:28,872 --> 00:00:33,472
 Later, Riemann developed a revolutionary
 strategy for such problems.
 
 10
-00:00:36,050 --> 00:00:43,050
+00:00:35,722 --> 00:00:42,709
 This strategy finally solved the problem,
 and led to much fascinating mathematics.
 
