@@ -46,34 +46,34 @@ and so they have to be counted with more
 weight to balance their contribution.
 
 12
-00:00:39,350 --> 00:00:43,350
+00:00:39,350 --> 00:00:43,550
 But this is exactly what the
-Prime Number Theorem said.
+Prime Number Theorem says.
 
 13
-00:00:43,800 --> 00:00:48,200
+00:00:44,000 --> 00:00:48,400
 Well, this doesn't really
 prove the Prime Number Theorem,
 
 14
-00:00:48,450 --> 00:00:50,850
+00:00:48,650 --> 00:00:51,050
 since it only tells us about averages.
 
 15
-00:00:51,300 --> 00:00:55,700
+00:00:51,500 --> 00:00:55,900
 There could be regions with
 significantly fewer primes,
 
 16
-00:00:55,950 --> 00:00:58,150
+00:00:56,150 --> 00:00:58,350
 and regions with significantly more.
 
 17
-00:00:58,600 --> 00:01:00,600
+00:00:58,800 --> 00:01:00,800
 But it gives us a sense of it.
 
 18
-00:01:01,050 --> 00:01:07,450
+00:01:01,250 --> 00:01:07,650
 In fact, it yields the following weak
 version of the Prime Number Theorem:
 

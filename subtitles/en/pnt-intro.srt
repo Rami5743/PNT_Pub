@@ -549,91 +549,91 @@ and so they have to be counted with more
 weight to balance their contribution.
 
 125
-00:07:45,033 --> 00:07:49,033
+00:07:45,033 --> 00:07:49,233
 But this is exactly what the
-Prime Number Theorem said.
+Prime Number Theorem says.
 
 126
-00:07:49,483 --> 00:07:53,883
+00:07:49,683 --> 00:07:54,083
 Well, this doesn't really
 prove the Prime Number Theorem,
 
 127
-00:07:54,133 --> 00:07:56,533
+00:07:54,333 --> 00:07:56,733
 since it only tells us about averages.
 
 128
-00:07:56,983 --> 00:08:01,383
+00:07:57,183 --> 00:08:01,583
 There could be regions with
 significantly fewer primes,
 
 129
-00:08:01,633 --> 00:08:03,833
+00:08:01,833 --> 00:08:04,033
 and regions with significantly more.
 
 130
-00:08:04,283 --> 00:08:06,283
+00:08:04,483 --> 00:08:06,483
 But it gives us a sense of it.
 
 131
-00:08:06,733 --> 00:08:13,133
+00:08:06,933 --> 00:08:13,333
 In fact, it yields the following weak
 version of the Prime Number Theorem:
 
 132
-00:08:14,733 --> 00:08:18,333
+00:08:14,917 --> 00:08:18,517
 If the limit in the Prime
 Number Theorem exists,
 
 133
-00:08:18,583 --> 00:08:20,383
+00:08:18,767 --> 00:08:20,567
 then it equals 1.
 
 134
-00:08:20,833 --> 00:08:22,633
+00:08:21,017 --> 00:08:22,817
 Why is this true?
 
 135
-00:08:23,083 --> 00:08:27,483
+00:08:23,267 --> 00:08:27,667
 Because if the limit is not 1,
 say it equals a number a,
 
 136
-00:08:27,733 --> 00:08:33,333
+00:08:27,917 --> 00:08:33,517
 it easily follows that the harmonic
 series is about a times Mertens' series,
 
 137
-00:08:33,583 --> 00:08:35,583
+00:08:33,767 --> 00:08:35,767
 contradicting Mertens' theorem.
 
 138
-00:08:39,633 --> 00:08:41,433
+00:08:39,817 --> 00:08:41,617
 What else would you like to hear about?
 
 139
-00:08:41,883 --> 00:08:43,683
+00:08:42,067 --> 00:08:43,867
 Chebyshev's proof?
 
 140
-00:08:44,133 --> 00:08:47,333
+00:08:44,317 --> 00:08:47,517
 The proof of the Prime Number Theorem
 
 141
-00:08:47,483 --> 00:08:51,683
+00:08:47,667 --> 00:08:51,867
 and its connection to Riemann's zeta
 function and the Riemann Hypothesis?
 
 142
-00:08:52,133 --> 00:08:56,933
+00:08:52,317 --> 00:08:57,117
 Maybe a fun heuristic for why
 the theorem should be true?
 
 143
-00:08:57,383 --> 00:08:59,583
+00:08:57,567 --> 00:08:59,767
 Or maybe something else entirely?
 
 144
-00:09:00,033 --> 00:09:01,833
+00:09:00,217 --> 00:09:02,017
 Tell me in the comments.
 

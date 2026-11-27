@@ -16,7 +16,7 @@
       "he": "videos/pnt-intro.mp4",
       "en": "videos/en/pnt-intro.mp4"
     },
-    "duration": 545.067
+    "duration": 545.25
   },
   "scenes": [
     {
@@ -224,7 +224,7 @@
         "he": "videos/13-harmonic.mp4",
         "en": "videos/en/13-harmonic.mp4"
       },
-      "duration": 68.25,
+      "duration": 68.433,
       "start": 425.683
     },
     {
@@ -241,7 +241,7 @@
         "en": "videos/en/14-weak-pnt.mp4"
       },
       "duration": 24.9,
-      "start": 493.933
+      "start": 494.116
     },
     {
       "id": "15-what-next",
@@ -257,7 +257,7 @@
         "en": "videos/en/15-what-next.mp4"
       },
       "duration": 26.233,
-      "start": 518.833
+      "start": 519.016
     }
   ],
   "languages": [
