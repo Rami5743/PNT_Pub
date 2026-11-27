@@ -1,0 +1,47 @@
+1
+00:00:00,800 --> 00:00:03,800
+Let's look at the number n!
+
+2
+00:00:03,950 --> 00:00:05,950
+and try to factor it.
+
+3
+00:00:06,100 --> 00:00:08,900
+How many times does 2
+appear in the factorization?
+
+4
+00:00:09,050 --> 00:00:10,850
+That's fairly easy:
+
+5
+00:00:11,000 --> 00:00:13,600
+once for every even number up to n,
+
+6
+00:00:13,750 --> 00:00:17,150
+once more for every number divisible by 4,
+
+7
+00:00:17,300 --> 00:00:19,100
+and so on.
+
+8
+00:00:19,550 --> 00:00:21,750
+What about 3? The
+situation here is similar,
+
+9
+00:00:21,900 --> 00:00:24,500
+and so on for all the primes up to n.
+
+10
+00:00:24,650 --> 00:00:26,850
+It's rather cumbersome
+to write it this way,
+
+11
+00:00:27,000 --> 00:00:29,600
+so we'll use product and sum notation.
+

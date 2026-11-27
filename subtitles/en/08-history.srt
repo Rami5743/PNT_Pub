@@ -1,0 +1,51 @@
+1
+00:00:00,800 --> 00:00:04,200
+This claim, in a slightly different
+form, was conjectured by Gauss
+
+2
+00:00:06,250 --> 00:00:09,250
+and proved by Hadamard
+and de la Vallée Poussin.
+
+3
+00:00:09,400 --> 00:00:12,400
+It is called the Prime Number Theorem,
+
+4
+00:00:12,550 --> 00:00:14,950
+and it is the subject of this video.
+
+5
+00:00:15,100 --> 00:00:19,500
+Before the full proof, Chebyshev
+proved a weaker version,
+
+6
+00:00:19,650 --> 00:00:22,250
+in which the ratio is
+bounded from above and below
+
+7
+00:00:22,400 --> 00:00:24,400
+but the limit is not found,
+
+8
+00:00:24,550 --> 00:00:27,550
+and which doesn't work for
+percentages that are too small either.
+
+9
+00:00:27,700 --> 00:00:32,300
+Later, Riemann developed a revolutionary
+strategy for such problems.
+
+10
+00:00:34,550 --> 00:00:39,150
+It was this strategy that eventually
+led to the solution of the problem
+
+11
+00:00:39,300 --> 00:00:41,700
+and to a lot more fascinating mathematics.
+

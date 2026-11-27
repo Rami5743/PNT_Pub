@@ -1,0 +1,32 @@
+1
+00:00:00,800 --> 00:00:03,000
+Let's switch to a logarithmic scale.
+
+2
+00:00:03,850 --> 00:00:06,050
+We see a clear pattern here:
+
+3
+00:00:06,200 --> 00:00:10,600
+to a very good approximation, it is
+a linear function of the logarithm.
+
+4
+00:00:10,750 --> 00:00:12,550
+Let's check which one.
+
+5
+00:00:13,300 --> 00:00:15,300
+Here too, with a computer
+it is easy to see
+
+6
+00:00:15,450 --> 00:00:20,050
+that the logarithm to base e
+approximates the function r₁%(n) well,
+
+7
+00:00:20,200 --> 00:00:23,400
+at least in the range
+where we can compute.
+

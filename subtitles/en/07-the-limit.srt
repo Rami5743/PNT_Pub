@@ -1,0 +1,61 @@
+1
+00:00:00,800 --> 00:00:02,600
+This looks great on the graph,
+
+2
+00:00:02,750 --> 00:00:05,950
+but how do we prove it works for every n?
+
+3
+00:00:06,100 --> 00:00:08,700
+Or rather, before that,
+how do we even state it?
+
+4
+00:00:08,850 --> 00:00:11,450
+Well, the second question
+is easy to answer.
+
+5
+00:00:11,600 --> 00:00:15,600
+We want to compare our
+function with ln(n).
+
+6
+00:00:15,750 --> 00:00:17,750
+So we divide one by the other,
+
+7
+00:00:19,000 --> 00:00:23,600
+and we want to say that this
+ratio is very close to 1.
+
+8
+00:00:23,750 --> 00:00:28,550
+Of course, when n is small, our
+statistics are not very good yet,
+
+9
+00:00:28,700 --> 00:00:30,500
+and there can be a deviation.
+
+10
+00:00:30,650 --> 00:00:33,850
+But as n grows, the
+deviation tends to vanish.
+
+11
+00:00:34,000 --> 00:00:36,600
+That is what the notion of
+a limit was invented for.
+
+12
+00:00:36,750 --> 00:00:40,150
+So our claim is really
+that the limit is 1.
+
+13
+00:00:40,300 --> 00:00:43,300
+And as we said, we can also
+take any other percentage.
+

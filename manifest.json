@@ -124,6 +124,10 @@
     {
       "code": "he",
       "label": "עברית"
+    },
+    {
+      "code": "en",
+      "label": "English"
     }
   ]
 }

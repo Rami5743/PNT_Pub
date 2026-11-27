@@ -1,0 +1,31 @@
+1
+00:00:00,800 --> 00:00:03,600
+We won't prove the conjecture now.
+
+2
+00:00:03,750 --> 00:00:07,750
+Nor will we tell you about
+Riemann's revolutionary ideas.
+
+3
+00:00:07,900 --> 00:00:10,900
+We won't even explain Chebyshev's proof,
+
+4
+00:00:11,050 --> 00:00:12,850
+although it isn't complicated.
+
+5
+00:00:13,000 --> 00:00:15,600
+Instead, we'll prove a theorem of Mertens
+
+6
+00:00:15,750 --> 00:00:17,750
+which, admittedly, doesn't
+imply the conjecture,
+
+7
+00:00:17,900 --> 00:00:21,700
+but certainly makes a convincing
+case that it should be true.
+

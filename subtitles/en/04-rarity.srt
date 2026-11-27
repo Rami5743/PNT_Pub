@@ -1,0 +1,27 @@
+1
+00:00:00,800 --> 00:00:03,400
+We see in the graph
+that it is quite small.
+
+2
+00:00:03,550 --> 00:00:06,950
+It's a bit hard to see
+things about small numbers.
+
+3
+00:00:07,100 --> 00:00:10,500
+So instead we'll talk about 1/p₁%(n).
+
+4
+00:00:10,650 --> 00:00:13,650
+Let's call this function r₁%(n),
+
+5
+00:00:14,700 --> 00:00:18,500
+the "rarity" of the primes around n.
+
+6
+00:00:18,650 --> 00:00:22,650
+We see that this function
+increases, but rather slowly.
+

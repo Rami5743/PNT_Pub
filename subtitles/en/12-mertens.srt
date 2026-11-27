@@ -1,0 +1,49 @@
+1
+00:00:00,800 --> 00:00:02,600
+What about the other side?
+
+2
+00:00:02,750 --> 00:00:06,150
+A factorial is a product, and again
+the log of a product is a sum.
+
+3
+00:00:06,300 --> 00:00:08,900
+This sum is not so easy to compute,
+
+4
+00:00:09,050 --> 00:00:11,050
+but it can be approximated quite well.
+
+5
+00:00:11,200 --> 00:00:15,600
+The point is that for 99%
+of the numbers up to n
+
+6
+00:00:15,750 --> 00:00:17,550
+the log is roughly log n.
+
+7
+00:00:18,800 --> 00:00:22,600
+So, quite accurately, we
+can replace it with n ln(n).
+
+8
+00:00:22,750 --> 00:00:24,750
+Now we can cancel n.
+
+9
+00:00:24,900 --> 00:00:30,500
+We got an inexact formula for the
+sum of ln p/p over the primes.
+
+10
+00:00:30,650 --> 00:00:34,450
+And if we work hard enough,
+we can bound its error.
+
+11
+00:00:34,600 --> 00:00:36,400
+This is Mertens' theorem.
+
