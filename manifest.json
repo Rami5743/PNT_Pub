@@ -12,6 +12,10 @@
       "en": "The full video"
     },
     "file": "videos/pnt-intro.mp4",
+    "files": {
+      "he": "videos/pnt-intro.mp4",
+      "en": "videos/en/pnt-intro.mp4"
+    },
     "duration": 476.1
   },
   "scenes": [
@@ -24,6 +28,10 @@
         "en": "A large number"
       },
       "file": "videos/01-a-large-number.mp4",
+      "files": {
+        "he": "videos/01-a-large-number.mp4",
+        "en": "videos/01-a-large-number.mp4"
+      },
       "duration": 46.8,
       "start": 0.0
     },
@@ -36,6 +44,10 @@
         "en": "Counting primes"
       },
       "file": "videos/02-counting.mp4",
+      "files": {
+        "he": "videos/02-counting.mp4",
+        "en": "videos/02-counting.mp4"
+      },
       "duration": 22.55,
       "start": 46.8
     },
@@ -48,6 +60,10 @@
         "en": "A sliding window"
       },
       "file": "videos/03-sliding-window.mp4",
+      "files": {
+        "he": "videos/03-sliding-window.mp4",
+        "en": "videos/03-sliding-window.mp4"
+      },
       "duration": 41.4,
       "start": 69.35
     },
@@ -60,6 +76,10 @@
         "en": "Rarity"
       },
       "file": "videos/04-rarity.mp4",
+      "files": {
+        "he": "videos/04-rarity.mp4",
+        "en": "videos/en/04-rarity.mp4"
+      },
       "duration": 23.45,
       "start": 110.75
     },
@@ -72,6 +92,10 @@
         "en": "A logarithmic scale"
       },
       "file": "videos/05-log-scale.mp4",
+      "files": {
+        "he": "videos/05-log-scale.mp4",
+        "en": "videos/05-log-scale.mp4"
+      },
       "duration": 24.2,
       "start": 134.2
     },
@@ -84,6 +108,10 @@
         "en": "Other percentages"
       },
       "file": "videos/06-other-percents.mp4",
+      "files": {
+        "he": "videos/06-other-percents.mp4",
+        "en": "videos/06-other-percents.mp4"
+      },
       "duration": 13.85,
       "start": 158.4
     },
@@ -96,6 +124,10 @@
         "en": "The limit"
       },
       "file": "videos/07-the-limit.mp4",
+      "files": {
+        "he": "videos/07-the-limit.mp4",
+        "en": "videos/07-the-limit.mp4"
+      },
       "duration": 44.1,
       "start": 172.25
     },
@@ -108,6 +140,10 @@
         "en": "History"
       },
       "file": "videos/08-history.mp4",
+      "files": {
+        "he": "videos/08-history.mp4",
+        "en": "videos/en/08-history.mp4"
+      },
       "duration": 42.5,
       "start": 216.35
     },
@@ -120,6 +156,10 @@
         "en": "The plan"
       },
       "file": "videos/09-the-plan.mp4",
+      "files": {
+        "he": "videos/09-the-plan.mp4",
+        "en": "videos/en/09-the-plan.mp4"
+      },
       "duration": 24.15,
       "start": 258.85
     },
@@ -132,6 +172,10 @@
         "en": "Factorial"
       },
       "file": "videos/10-factorial.mp4",
+      "files": {
+        "he": "videos/10-factorial.mp4",
+        "en": "videos/10-factorial.mp4"
+      },
       "duration": 30.4,
       "start": 283.0
     },
@@ -144,6 +188,10 @@
         "en": "Taking logarithms"
       },
       "file": "videos/11-taking-logs.mp4",
+      "files": {
+        "he": "videos/11-taking-logs.mp4",
+        "en": "videos/11-taking-logs.mp4"
+      },
       "duration": 37.45,
       "start": 313.4
     },
@@ -156,6 +204,10 @@
         "en": "Mertens' theorem"
       },
       "file": "videos/12-mertens.mp4",
+      "files": {
+        "he": "videos/12-mertens.mp4",
+        "en": "videos/en/12-mertens.mp4"
+      },
       "duration": 37.2,
       "start": 350.85
     },
@@ -168,6 +220,10 @@
         "en": "The harmonic series"
       },
       "file": "videos/13-harmonic.mp4",
+      "files": {
+        "he": "videos/13-harmonic.mp4",
+        "en": "videos/en/13-harmonic.mp4"
+      },
       "duration": 64.4,
       "start": 388.05
     },
@@ -180,6 +236,10 @@
         "en": "If the limit exists, it is 1"
       },
       "file": "videos/14-weak-pnt.mp4",
+      "files": {
+        "he": "videos/14-weak-pnt.mp4",
+        "en": "videos/en/14-weak-pnt.mp4"
+      },
       "duration": 23.65,
       "start": 452.45
     }
